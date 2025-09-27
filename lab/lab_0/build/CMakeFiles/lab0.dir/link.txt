@@ -1,0 +1,1 @@
+/project/compute/compilers/gcc-8.3.0/bin/g++ -g CMakeFiles/lab0.dir/lab0.cpp.o CMakeFiles/lab0.dir/HoldEmDeck.cpp.o CMakeFiles/lab0.dir/PinochleDeck.cpp.o CMakeFiles/lab0.dir/Suit.cpp.o -o lab0 
