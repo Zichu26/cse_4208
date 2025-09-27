@@ -16,7 +16,7 @@ int main (int argc, char** argv) { // argc and argv not used, but their types ar
         return NO_ARGUMENTS;
     }
 
-    cout << "hello, world!" << endl; // procedural: has an effect
+    // cout << "hello, world!" << endl; // procedural: has an effect
 
     for (int i = 1; i < argc; ++i) {
         ofstream outfile(argv[i]);
