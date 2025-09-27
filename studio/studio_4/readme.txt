@@ -77,3 +77,5 @@
             std::cout << day << " ";
         }
     Output:
+        Union of the two sets:
+            Sun  Mon  Tue  Wed  Thu  Fri  Sat
