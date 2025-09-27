@@ -20,5 +20,12 @@ int main (int argc, char** argv) { // argc and argv not used, but their types ar
     
     std::cout << std::endl;
 
+    do {
+        std::cout << today;
+        today--;
+    } while (today != start);
+    
+    std::cout << std::endl;
+
     return SUCCESS; // functional: returns a success/failure code
 }

@@ -55,3 +55,30 @@ Weekday operator++(Weekday& day, int) {
     }
     return day;
 }
+
+Weekday operator--(Weekday& day, int) {
+    switch (day) {
+        case Weekday::Sunday:
+            day = Weekday::Saturday; 
+            break;
+        case Weekday::Monday:
+            day = Weekday::Sunday;
+            break;
+        case Weekday::Tuesday:
+            day = Weekday::Monday;
+            break;
+        case Weekday::Wednesday:
+            day = Weekday::Tuesday;
+            break;
+        case Weekday::Thursday:
+            day = Weekday::Wednesday;
+            break;
+        case Weekday::Friday:
+            day = Weekday::Thursday;
+            break;
+        case Weekday::Saturday:
+            day = Weekday::Friday;
+            break;
+    }
+    return day;
+}

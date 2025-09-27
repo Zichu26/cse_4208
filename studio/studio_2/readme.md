@@ -60,5 +60,64 @@
 
     Output:
         Wed
-        
 3. 
+    Code:
+        Weekday operator++(Weekday& day, int) {
+        switch (day) {
+            case Weekday::Sunday:
+                day = Weekday::Monday;
+                break;
+            case Weekday::Monday:
+                day = Weekday::Tuesday;
+                break;
+            case Weekday::Tuesday:
+                day = Weekday::Wednesday;
+                break;
+            case Weekday::Wednesday:
+                day = Weekday::Thursday;
+                break;
+            case Weekday::Thursday:
+                day = Weekday::Friday;
+                break;
+            case Weekday::Friday:
+                day = Weekday::Saturday;
+                break;
+            case Weekday::Saturday:
+                day = Weekday::Sunday; 
+                break;
+        }
+        return day;
+    }
+
+    Output: 
+        Wed Thu Fri Sat Sun Mon Tue
+4.
+    Code:
+        Weekday operator--(Weekday& day, int) {
+            switch (day) {
+                case Weekday::Sunday:
+                    day = Weekday::Saturday; 
+                    break;
+                case Weekday::Monday:
+                    day = Weekday::Sunday;
+                    break;
+                case Weekday::Tuesday:
+                    day = Weekday::Monday;
+                    break;
+                case Weekday::Wednesday:
+                    day = Weekday::Tuesday;
+                    break;
+                case Weekday::Thursday:
+                    day = Weekday::Wednesday;
+                    break;
+                case Weekday::Friday:
+                    day = Weekday::Thursday;
+                    break;
+                case Weekday::Saturday:
+                    day = Weekday::Friday;
+                    break;
+            }
+            return day;
+        }
+    Output:
+        
