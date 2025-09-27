@@ -27,7 +27,7 @@ int main() {
     holdEmDeck0.print(std::cout, 13);
     std::cout << std::endl;
 
-    holdEmDeck0 >> holdEmDeck1
+    holdEmDeck0 >> holdEmDeck1;
     std::cout << "Texas Hold 'Em Deck0:" << std::endl;
     holdEmDeck0.print(std::cout, 13);
 
