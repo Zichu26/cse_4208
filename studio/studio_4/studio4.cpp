@@ -3,6 +3,7 @@
 
 #include <iostream> // for cout ostream and endl manipulator
 #include "Weekday.h"
+#include <set>
 
 using namespace std; // optional, could say std::cout and std::endl below instead
 
@@ -28,6 +29,19 @@ int main (int argc, char** argv) { // argc and argv not used, but their types ar
     std::cout << "\nWeekday comparisons:" << std::endl;
     std::cout << w1 << "< " << w2 << ": " << (w1 < w2) << std::endl;
     std::cout << w2 << "< " << w1 << ": " << (w2 < w1) << std::endl;
+
+    std::set<Weekday> weekdays1 = {Weekday::Monday, Weekday::Wednesday, Weekday::Friday};
+    std::set<Weekday> weekdays2 = {Weekday::Sunday, Weekday::Tuesday, Weekday::Thursday, Weekday::Saturday};
+    
+    std::cout << "First set of weekdays:" << std::endl;
+    for (const auto& day : weekdays1) {
+        std::cout << day << std::endl;
+    }
+    
+    std::cout << "\nSecond set of weekdays:" << std::endl;
+    for (const auto& day : weekdays2) {
+        std::cout << day << std::endl;
+    }
 
     return SUCCESS; // functional: returns a success/failure code
 }
