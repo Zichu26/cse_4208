@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.26)
-set(PROJ studio1)
+set(PROJ studio2)
 set(CMAKE_BUILD_TYPE Debug)
 project(${PROJ})
 add_executable(${PROJ}
