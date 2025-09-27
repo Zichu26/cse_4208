@@ -4,6 +4,7 @@
 #define DECK_H
 
 #include <iostream>
+#include "CardSet.cpp"
 
 template <typename R, typename S>
 class Deck : public CardSet<R, S> {
