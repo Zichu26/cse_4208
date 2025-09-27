@@ -34,16 +34,3 @@ PinochleDeck::PinochleDeck() {
         }
     }
 }
-
-void PinochleDeck::print(std::ostream& os) const {
-    int count = 0;
-    for (const auto& card : cards) {
-        os << std::setw(3) << std::right << card;
-        if (++count % 6 == 0) { 
-            os << "\n";
-        }
-    }
-    if (count % 8 != 0) {
-        os << "\n";
-    }
-}

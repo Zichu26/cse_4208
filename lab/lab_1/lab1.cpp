@@ -9,11 +9,11 @@ int main() {
     HoldEmDeck holdEmDeck;
 
     std::cout << "Pinochle Deck:" << std::endl;
-    pinochleDeck.print(std::cout);
+    pinochleDeck.print(std::cout, 6);
     std::cout << std::endl;
 
     std::cout << "Texas Hold 'Em Deck:" << std::endl;
-    holdEmDeck.print(std::cout);
+    holdEmDeck.print(std::cout, 13);
     std::cout << std::endl;
 
     return 0;
