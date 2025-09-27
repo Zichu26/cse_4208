@@ -1,5 +1,8 @@
 // CardSet.cpp Zichu Pan p.zichu@wustl.edu
 // The implementation of CardSet class template
+#ifndef CARDSET_CPP
+#define CARDSET_CPP
+
 #include "CardSet.h"
 
 template <typename R, typename S>
@@ -26,3 +29,5 @@ void CardSet<R, S>::print(std::ostream& os, size_t cardInRow) {
         os << std::endl;
     }
 }
+
+#endif
