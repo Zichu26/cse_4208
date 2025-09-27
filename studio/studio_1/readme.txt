@@ -16,4 +16,8 @@
     the destructor are automatically called, which results in error. The copy and copy assignment 
     operators were never used.
 4. 
+    Output:
+        1 2
+        2 1
+5.
     
