@@ -153,4 +153,4 @@
     Code:
         see source code
     Output:
-        
+        Low Medium High
