@@ -16,6 +16,8 @@ struct MyStruct {
     T value;
     
     MyStruct(T v);
+
+    #include "MyStruct.cpp"
 };
 
 
