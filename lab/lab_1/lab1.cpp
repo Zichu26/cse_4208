@@ -1,6 +1,7 @@
 // lab0.cpp Zichu Pan p.zichu@wustl.edu
 // Entry point of program, prints out default Pinochle deck and hold 'em deck.
 #include <iostream>
+#include <random>
 #include "PinochleDeck.h"
 #include "HoldEmDeck.h"
 
