@@ -11,6 +11,7 @@ const int SUCCESS = 0; // by convention, where non-zero results are error codes
 int main (int argc, char** argv) { // argc and argv not used, but their types are specified
     Weekday today = Weekday::Wednesday;
     std::cout << today << std::endl;
+    Weekday start = today
 
     do {
         std::cout << today;
