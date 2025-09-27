@@ -14,6 +14,10 @@ int main (int argc, char** argv) { // argc and argv not used, but their types ar
     MyStruct obj2(2);
     
     cout << obj1.value << " " << obj2.value << endl;
+    
+    std::swap(obj1, obj2);
+    
+    cout << obj1.value << " " << obj2.value << endl;
 
     return SUCCESS; // functional: returns a success/failure code
 }
