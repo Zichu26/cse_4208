@@ -9,5 +9,5 @@ template <class F, class G>
 auto compose (F f, G g);
 
 #ifdef TEMPLATE_HEADERS_INCLUDE_SOURCE
-#include "Compose_T.cpp"a
+#include "Compose_T.cpp"
 #endif
