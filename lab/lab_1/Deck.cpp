@@ -8,11 +8,11 @@
 template <typename R, typename S>
 void Deck<R, S>::shuffle() {
     std::random_device rd;
-    std::mt19937 gen(rd());
+    std::mt19937 randomNumberGen(rd());
     
     std::shuffle(CardSet<R, S>::cards.begin(), 
                  CardSet<R, S>::cards.end(), 
-                 gen);
+                 randomNumberGen);
 }
 
 #endif
