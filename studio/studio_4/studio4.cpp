@@ -25,11 +25,9 @@ int main (int argc, char** argv) { // argc and argv not used, but their types ar
     std::cout << "Pressure comparisons:" << std::endl;
     std::cout << p1 << "< " << p2 << ": " << (p1 < p2) << std::endl;
     std::cout << p2 << "< " << p1 << ": " << (p2 < p1) << std::endl;
-    std::cout << p1 << "< " << p1 << ": " << (p1 < p1) << std::endl;
     std::cout << "\nWeekday comparisons:" << std::endl;
     std::cout << w1 << "< " << w2 << ": " << (w1 < w2) << std::endl;
     std::cout << w2 << "< " << w1 << ": " << (w2 < w1) << std::endl;
-    std::cout << w1 << "< " << w1 << ": " << (w1 < w1) << std::endl;
 
     return SUCCESS; // functional: returns a success/failure code
 }
