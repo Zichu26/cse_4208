@@ -14,7 +14,7 @@ int main() {
     std::cout << std::endl;
 
     std::cout << "Texas Hold 'Em Deck:" << std::endl;
-    holdEmDeck.print(std::cout, 13);
+    holdEmDeck0.print(std::cout, 13);
     std::cout << std::endl;
 
     pinochleDeck.shuffle();
@@ -22,17 +22,17 @@ int main() {
     pinochleDeck.print(std::cout, 6);
     std::cout << std::endl;
 
-    holdEmDeck1.shuffle();
-    std::cout << "Texas Hold 'Em Deck1:" << std::endl;
-    holdEmDeck1.print(std::cout, 13);
+    holdEmDeck0.shuffle();
+    std::cout << "Texas Hold 'Em Deck0:" << std::endl;
+    holdEmDeck0.print(std::cout, 13);
     std::cout << std::endl;
 
-    holdEmDeck1 >> holdEmDeck2
+    holdEmDeck0 >> holdEmDeck1
+    std::cout << "Texas Hold 'Em Deck0:" << std::endl;
+    holdEmDeck0.print(std::cout, 13);
+
     std::cout << "Texas Hold 'Em Deck1:" << std::endl;
     holdEmDeck1.print(std::cout, 13);
-
-    std::cout << "Texas Hold 'Em Deck2:" << std::endl;
-    holdEmDeck2.print(std::cout, 13);
 
     return 0;
 }
