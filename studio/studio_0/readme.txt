@@ -4,4 +4,9 @@
     which gcc: /project/compute/compilers/gcc-8.3.0/bin/gcc
     g++ -v: gcc version 8.3.0 (GCC)
 4. output: hello, world!
-5.
+5. 
+    no args: usage: ./build/studio0 <arg1> [<arg2> ...]
+        return 1
+    with args: hello, world!
+        return 0
+6. 
