@@ -30,5 +30,10 @@ int main (int argc, char** argv) { // argc and argv not used, but their types ar
     Pressure currentPressure = Pressure::pop;
     std::cout << currentPressure << std::endl;
 
+    for (Pressure p = Pressure::lo; p != Pressure::pop; ++p) {
+        std::cout << p;
+    }
+    std::cout << std::endl;
+
     return SUCCESS; // functional: returns a success/failure code
 }

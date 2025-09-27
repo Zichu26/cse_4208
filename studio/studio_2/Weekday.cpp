@@ -102,3 +102,20 @@ std::ostream& operator<<(std::ostream& os, const Pressure& pressure) {
     os << " ";
     return os;
 }
+
+Pressure& operator++(Pressure& pressure) {
+    switch (pressure) {
+        case Pressure::lo:
+            pressure = Pressure::med;
+            break;
+        case Pressure::med:
+            pressure = Pressure::hi;
+            break;
+        case Pressure::hi:
+            pressure = Pressure::pop;
+            break;
+        case Pressure::pop:
+            break;
+    }
+    return pressure;
+}
