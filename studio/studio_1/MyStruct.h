@@ -1,22 +1,27 @@
 #ifndef MYSTRUCT_H
 #define MYSTRUCT_H
 
-// struct MyStruct {
-//     int value;
-    
-//     MyStruct(int v);
+#include <ostream>
+using std::ostream;
 
-//     // MyStruct(const MyStruct&) = delete;
-//     // MyStruct& operator=(const MyStruct&) = delete;
-//     // ~MyStruct() = delete;
-// };
+
+template <typename T>
+class MyStruct;
+
+// forward declaration
+ostream& operator<<(ostream& os, const MyStruct<T>& obj);
 
 template <typename T = int>
-struct MyStruct {
+class MyStruct {
+private:
     T value;
     
+public:
     MyStruct(T v);
+    
+    friend ostream& operator<< <T>(ostream& os, const MyStruct<T>& obj);
 };
+
 
 #include "MyStruct.cpp"
 

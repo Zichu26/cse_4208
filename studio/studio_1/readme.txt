@@ -24,3 +24,17 @@
     Original main function (before swap): only required the custom constructor and destructor.
     It never copied or assigned objects. std::swap function template requires both the copy constructor and
     copy assignment operator.
+6.
+    Code: see source files
+    Main Change:
+        template <typename T = int>
+        struct MyStruct {
+            T value;
+            
+            MyStruct(T v);
+        };
+
+        #include "MyStruct.cpp"
+    Since compiler needs full template definition to compile it together.
+7.
+    
