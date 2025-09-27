@@ -2,7 +2,6 @@
    of Kernighan and Ritchie's The C Programming Language, 2nd. Ed. */
 
 #include <iostream> // for cout ostream and endl manipulator
-#include "MyStruct.h"
 
 using namespace std; // optional, could say std::cout and std::endl below instead
 
