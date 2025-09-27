@@ -10,6 +10,7 @@
 template <typename R, typename S>
 void Deck<R, S>::shuffle() {
     std::random_device rd;
+    // object construction of type mt19937 not function calling
     std::mt19937 randomNumberGen(rd());
     
     std::shuffle(CardSet<R, S>::cards.begin(), 
