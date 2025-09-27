@@ -62,7 +62,7 @@ int main (int argc, char** argv) { // argc and argv not used, but their types ar
                    std::inserter(union_set, union_set.end()));
     std::cout << "\nUnion of the two sets:" << std::endl;
     for (const auto& day : union_set) {
-        std::cout << day << std::endl;
+        std::cout << day << " ";
     }
 
     return SUCCESS; // functional: returns a success/failure code

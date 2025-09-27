@@ -57,7 +57,6 @@
             for (const auto& day : intersection) {
                 std::cout << day << std::endl;
             }
-
     Output:
         First set of weekdays:
         Mon  Wed  Fri
@@ -68,4 +67,13 @@
         Intersection of the two sets:
             Mon
 6.
-    
+    Code:
+        std::set<Weekday> union_set;
+        std::set_union(weekdays1.begin(), weekdays1.end(),
+                    weekdays2.begin(), weekdays2.end(),
+                    std::inserter(union_set, union_set.end()));
+        std::cout << "\nUnion of the two sets:" << std::endl;
+        for (const auto& day : union_set) {
+            std::cout << day << " ";
+        }
+    Output:
