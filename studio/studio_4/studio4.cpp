@@ -10,13 +10,11 @@ const int SUCCESS = 0; // by convention, where non-zero results are error codes
 
 int main (int argc, char** argv) { // argc and argv not used, but their types are specified
 
-    Pressure currentPressure = Pressure::pop;
-    std::cout << currentPressure << std::endl;
-
-    for (Pressure p = Pressure::lo; p != Pressure::pop; ++p) {
-        std::cout << p;
-    }
-    std::cout << std::endl;
-
+    Pressure p = Pressure::lo;
+    
+    std::cout << "Initial value: " << p << std::endl;
+    std::cout << "Testing precedence: " << ++p << std::endl;
+    std::cout << "Final value: " << p << std::endl;
+    
     return SUCCESS; // functional: returns a success/failure code
 }
