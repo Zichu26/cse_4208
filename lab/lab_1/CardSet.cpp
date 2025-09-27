@@ -9,7 +9,7 @@ template <typename R, typename S>
 void CardSet<R, S>::print(std::ostream& os, size_t cardInRow) const {
     size_t i = 0; // card index
     
-    for (typename std::vector< Card<R, S> >::iterator card = cards.begin(); card != cards.end(); ++card) const {
+    for (typename std::vector< Card<R, S> >::iterator card = cards.begin(); card != cards.end(); ++card) {
         // print newline after every cardInRow number of cards are printed
         if (i > 0 && i % cardInRow == 0) {
             os << std::endl;
