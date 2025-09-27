@@ -34,6 +34,16 @@
         std::cout << "Value: " << value << std::endl;
         std::cout << "sin(cos(" << value << ")): " << std::sin(std::cos(value)) << std::endl;
     Output:
+        Value: 1.5
+        sin(cos(1.5)): 0.0706782
+5.
+    Code:
+        std::function<float(float)> sin_func = [](float x) { return std::sin(x); };
+        std::function<float(float)> cos_func = [](float x) { return std::cos(x); };
+
+        std::cout << "Value: " << value << std::endl;
+        std::cout << "sin_func(cos_func(" << value << ")): " << sin_func(cos_func(value)) << std::endl;
+    Output:
         
     
 

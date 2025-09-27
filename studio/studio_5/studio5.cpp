@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstring>
 #include <cmath>
+#include <functional>
 
 int main() {
     const char* str1 = "Hello, ";
@@ -17,6 +18,13 @@ int main() {
     float value = 1.5f;
     std::cout << "Value: " << value << std::endl;
     std::cout << "sin(cos(" << value << ")): " << std::sin(std::cos(value)) << std::endl;
+
+
+    std::function<float(float)> sin_func = [](float x) { return std::sin(x); };
+    std::function<float(float)> cos_func = [](float x) { return std::cos(x); };
+
+    std::cout << "Value: " << value << std::endl;
+    std::cout << "sin_func(cos_func(" << value << ")): " << sin_func(cos_func(value)) << std::endl;
     
     return 0;
 }
