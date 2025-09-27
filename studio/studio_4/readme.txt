@@ -47,4 +47,25 @@
         Second set of weekdays:
         Sun  Tue  Thu  Sat
 5.
+    Code:
+            std::set<Weekday> intersection;
+            std::set_intersection(weekdays1.begin(), weekdays1.end(),
+                                weekdays2.begin(), weekdays2.end(),
+                                std::inserter(intersection, intersection.end()));
+            
+            std::cout << "\nIntersection of the two sets:" << std::endl;
+            for (const auto& day : intersection) {
+                std::cout << day << std::endl;
+            }
+
+    Output:
+        First set of weekdays:
+        Mon  Wed  Fri
+
+        Second set of weekdays:
+        Sun  Mon  Tue  Thu  Sat
+
+        Intersection of the two sets:
+            Mon
+6.
     

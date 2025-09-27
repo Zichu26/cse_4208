@@ -56,5 +56,14 @@ int main (int argc, char** argv) { // argc and argv not used, but their types ar
         std::cout << day << std::endl;
     }
 
+    std::set<Weekday> union_set;
+    std::set_union(weekdays1.begin(), weekdays1.end(),
+                   weekdays2.begin(), weekdays2.end(),
+                   std::inserter(union_set, union_set.end()));
+    std::cout << "\nUnion of the two sets:" << std::endl;
+    for (const auto& day : union_set) {
+        std::cout << day << std::endl;
+    }
+
     return SUCCESS; // functional: returns a success/failure code
 }
