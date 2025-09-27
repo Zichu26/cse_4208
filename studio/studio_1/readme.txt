@@ -20,4 +20,7 @@
         1 2
         2 1
 5.
-    
+    All three =delete declarations had to be commented out.
+    Original main function (before swap): only required the custom constructor and destructor.
+    It never copied or assigned objects. std::swap function template requires both the copy constructor and
+    copy assignment operator.
