@@ -29,4 +29,23 @@ void CardSet<R, S>::print(std::ostream& os, size_t cardInRow) {
     }
 }
 
+template <typename R, typename S>
+bool CardSet<R, S>::is_empty() const {
+    return cards.empty();
+}
+
+template <typename R, typename S>
+CardSet<R, S>& CardSet<R, S>::operator>>(CardSet<R, S>& other) {
+    if (cards.empty()) {
+        throw std::runtime_error("Trying to shift shift on empty card sey!");
+    }
+    
+    // cards.back() creates a copy
+    other.cards.push_back(cards.back());
+    
+    cards.pop_back();
+
+    return *this;
+}
+
 #endif

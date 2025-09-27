@@ -15,6 +15,8 @@ protected:
 
 public:
     void print(std::ostream& os, size_t cardsInRow);
+    bool is_empty() const;
+    CardSet<R, S>& operator>>(CardSet<R, S>& other);
 };
 
 #ifdef TEMPLATE_HEADERS_INCLUDE_SOURCE
