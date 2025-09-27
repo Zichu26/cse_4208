@@ -27,5 +27,8 @@ int main (int argc, char** argv) { // argc and argv not used, but their types ar
     
     std::cout << std::endl;
 
+    Pressure currentPressure = Pressure::pop;
+    std::cout << currentPressure << std::endl;
+
     return SUCCESS; // functional: returns a success/failure code
 }

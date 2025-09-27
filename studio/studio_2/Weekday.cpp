@@ -82,3 +82,23 @@ Weekday operator--(Weekday& day, int) {
     }
     return day;
 }
+
+std::ostream& operator<<(std::ostream& os, const Pressure& pressure) {
+    switch (pressure) {
+        case Pressure::lo:
+            os << "Low";
+            break;
+        case Pressure::med:
+            os << "Medium";
+            break;
+        case Pressure::hi:
+            os << "High";
+            break;
+        case Pressure::pop:
+            os << "Pop";
+            break;
+    }
+    
+    os << " ";
+    return os;
+}

@@ -13,6 +13,14 @@ enum class Weekday {
     Saturday
 };
 
+enum class Pressure {
+    lo,
+    med,
+    hi,
+    pop
+};
+
+std::ostream& operator<<(std::ostream& os, const Pressure& pressure);
 std::ostream& operator<<(std::ostream& os, const Weekday& day);
 // int is a dummy parameter used solely to distinguish it from the prefix increment operator.
 Weekday operator++(Weekday& day, int);  

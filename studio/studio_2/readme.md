@@ -120,4 +120,32 @@
             return day;
         }
     Output:
+        Wed Tue Mon Sun Sat Fri Thu
+5.
+    Code:
+        Weekday.cpp
+            std::ostream& operator<<(std::ostream& os, const Pressure& pressure) {
+                switch (pressure) {
+                    case Pressure::lo:
+                        os << "Low";
+                        break;
+                    case Pressure::med:
+                        os << "Medium";
+                        break;
+                    case Pressure::hi:
+                        os << "High";
+                        break;
+                    case Pressure::pop:
+                        os << "Pop";
+                        break;
+                }
+                
+                os << " ";
+                return os;
+            }
+        main
+            Pressure currentPressure = Pressure::pop;
+            std::cout << currentPressure << std::endl;
+
+    Output:
         
