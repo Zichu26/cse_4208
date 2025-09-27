@@ -9,7 +9,7 @@
 template <typename R, typename S>
 class Deck : public CardSet<R, S> {
 public:
-    shuffle();
+    void shuffle();
 };
 
 #ifdef TEMPLATE_HEADERS_INCLUDE_SOURCE
