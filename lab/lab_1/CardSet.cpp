@@ -19,7 +19,7 @@ void CardSet<R, S>::print(std::ostream& os, size_t cardInRow) {
             (i + 1) % cardInRow != 0 --> true if card is not at end of row
             std::next(card) != cards.end() --> true if card is not last card
         */
-        if ((i + 1) % cardInRow != 0 && std::next(card) != cards.end()) {
+        if ((i + 1) % cardInRow != 0 && card + 1 != cards.end()) {
             os << " ";
         }
         ++i;
