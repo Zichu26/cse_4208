@@ -31,4 +31,20 @@
     starting from 0 and increment for each subsequent enumerator. So without operation overloading the
     default comparisons are comparing the underlying int values.
 4.
+    Code:
+        std::cout << "First set of weekdays:" << std::endl;
+        for (const auto& day : weekdays1) {
+            std::cout << day << " ";
+        }
+        std::cout << endl;
+        std::cout << "\nSecond set of weekdays:" << std::endl;
+        for (const auto& day : weekdays2) {
+            std::cout << day << " ";
+        }
+    Output:
+        First set of weekdays:
+        Mon  Wed  Fri
+        Second set of weekdays:
+        Sun  Tue  Thu  Sat
+5.
     

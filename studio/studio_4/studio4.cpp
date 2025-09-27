@@ -4,6 +4,8 @@
 #include <iostream> // for cout ostream and endl manipulator
 #include "Weekday.h"
 #include <set>
+#include <algorithm>
+#include <iterator>
 
 using namespace std; // optional, could say std::cout and std::endl below instead
 
@@ -31,7 +33,7 @@ int main (int argc, char** argv) { // argc and argv not used, but their types ar
     std::cout << w2 << "< " << w1 << ": " << (w2 < w1) << std::endl;
 
     std::set<Weekday> weekdays1 = {Weekday::Monday, Weekday::Wednesday, Weekday::Friday};
-    std::set<Weekday> weekdays2 = {Weekday::Sunday, Weekday::Tuesday, Weekday::Thursday, Weekday::Saturday};
+    std::set<Weekday> weekdays2 = {Weekday::Sunday, Weekday::Monday, Weekday::Tuesday, Weekday::Thursday, Weekday::Saturday};
     
     std::cout << "First set of weekdays:" << std::endl;
     for (const auto& day : weekdays1) {
@@ -43,6 +45,16 @@ int main (int argc, char** argv) { // argc and argv not used, but their types ar
         std::cout << day << " ";
     }
     std::cout << endl;
+
+    std::set<Weekday> intersection;
+    std::set_intersection(weekdays1.begin(), weekdays1.end(),
+                         weekdays2.begin(), weekdays2.end(),
+                         std::inserter(intersection, intersection.end()));
+    
+    std::cout << "\nIntersection of the two sets:" << std::endl;
+    for (const auto& day : intersection) {
+        std::cout << day << std::endl;
+    }
 
     return SUCCESS; // functional: returns a success/failure code
 }
