@@ -48,10 +48,14 @@
         sin(cos(1.5)): 0.0706782
 6.
     Code:
-
+        auto composed_func = compose(sin_func, cos_func);
+        std::cout << "Value: " << value << std::endl;
+        std::cout << "composed_func(" << value << "): " << composed_func(value) << std::endl;
 
     Output:
-        
+        Value: 1.5
+        composed_func(1.5): 0.0706782
+
 
     
 
