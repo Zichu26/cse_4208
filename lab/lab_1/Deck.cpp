@@ -4,6 +4,8 @@
 #define DECK_CPP
 
 #include "Deck.h"
+#include <random>
+#include <algorithm>
 
 template <typename R, typename S>
 void Deck<R, S>::shuffle() {
