@@ -44,7 +44,15 @@
         std::cout << "Value: " << value << std::endl;
         std::cout << "sin_func(cos_func(" << value << ")): " << sin_func(cos_func(value)) << std::endl;
     Output:
+        Value: 1.5
+        sin(cos(1.5)): 0.0706782
+6.
+    Code:
+
+
+    Output:
         
+
     
 
     

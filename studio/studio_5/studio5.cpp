@@ -2,6 +2,7 @@
 #include <cstring>
 #include <cmath>
 #include <functional>
+#include "Compose_T.h"
 
 int main() {
     const char* str1 = "Hello, ";
@@ -26,5 +27,8 @@ int main() {
     std::cout << "Value: " << value << std::endl;
     std::cout << "sin_func(cos_func(" << value << ")): " << sin_func(cos_func(value)) << std::endl;
     
+    auto composed_func = compose(sin_func, cos_func);
+    std::cout << "Value: " << value << std::endl;
+    std::cout << "composed_func(" << value << "): " << composed_func(value) << std::endl;
     return 0;
 }
