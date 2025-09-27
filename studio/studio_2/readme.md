@@ -57,3 +57,8 @@
         main:
             Weekday today = Weekday::Wednesday;
             std::cout << today << std::endl;
+
+    Output:
+        Wed
+        
+3. 

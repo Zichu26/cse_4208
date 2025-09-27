@@ -28,3 +28,30 @@ std::ostream& operator<<(std::ostream& os, const Weekday& day) {
     os << " ";
     return os;
 }
+
+Weekday operator++(Weekday& day, int) {
+    switch (day) {
+        case Weekday::Sunday:
+            day = Weekday::Monday;
+            break;
+        case Weekday::Monday:
+            day = Weekday::Tuesday;
+            break;
+        case Weekday::Tuesday:
+            day = Weekday::Wednesday;
+            break;
+        case Weekday::Wednesday:
+            day = Weekday::Thursday;
+            break;
+        case Weekday::Thursday:
+            day = Weekday::Friday;
+            break;
+        case Weekday::Friday:
+            day = Weekday::Saturday;
+            break;
+        case Weekday::Saturday:
+            day = Weekday::Sunday; 
+            break;
+    }
+    return day;
+}
