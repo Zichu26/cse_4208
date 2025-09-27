@@ -8,7 +8,7 @@ struct MyStruct {
 
     MyStruct(const MyStruct&) = delete;
     MyStruct& operator=(const MyStruct&) = delete;
-    // ~MyStruct() = delete;
+    ~MyStruct() = delete;
 };
 
 #endif // MYSTRUCT_H
