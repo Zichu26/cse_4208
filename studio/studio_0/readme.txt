@@ -10,3 +10,11 @@
     with args: hello, world!
         return 0
 6. 
+    [p.zichu@iht32-1501.sif studio_0]$ ./build/studio0 test.txt
+    [p.zichu@iht32-1501.sif studio_0]$ cat test.txt
+    hello, world!
+    [p.zichu@iht32-1501.sif studio_0]$ chmod a-w test.txt
+    [p.zichu@iht32-1501.sif studio_0]$ ./build/studio0 test.txt
+    Error: could not open file test.txt
+    [p.zichu@iht32-1501.sif studio_0]$ echo $?
+    2
