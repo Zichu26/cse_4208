@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstring>
+#include <cmath>
 
 int main() {
     const char* str1 = "Hello, ";
@@ -12,6 +13,10 @@ int main() {
     
     std::cout << "Length of first string: " << (*func_ptr)(str1) << std::endl;
     std::cout << "Length of second string: " << (*func_ptr)(str2) << std::endl;
+
+    float value = 1.5f;
+    std::cout << "Value: " << value << std::endl;
+    std::cout << "sin(cos(" << value << ")): " << std::sin(std::cos(value)) << std::endl;
     
     return 0;
 }

@@ -14,3 +14,27 @@
         Second string: "World!"
         Length of first string: 7
         Length of second string: 6
+3.
+    Code:
+        std::size_t (*func_ptr)(const char*) = std::strlen;
+
+        std::cout << "First string: \"" << str1 << "\"" << std::endl;
+        std::cout << "Second string: \"" << str2 << "\"" << std::endl;
+        
+        std::cout << "Length of first string: " << (*func_ptr)(str1) << std::endl;
+        std::cout << "Length of second string: " << (*func_ptr)(str2) << std::endl;
+    Output:
+        First string: "Hello, "
+        Second string: "World!"
+        Length of first string: 7
+        Length of second string: 6
+4.
+    Code:
+        float value = 1.5f;
+        std::cout << "Value: " << value << std::endl;
+        std::cout << "sin(cos(" << value << ")): " << std::sin(std::cos(value)) << std::endl;
+    Output:
+        
+    
+
+    
