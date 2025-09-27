@@ -35,13 +35,14 @@ int main (int argc, char** argv) { // argc and argv not used, but their types ar
     
     std::cout << "First set of weekdays:" << std::endl;
     for (const auto& day : weekdays1) {
-        std::cout << day << std::endl;
+        std::cout << day << " ";
     }
-    
+    std::cout << endl;
     std::cout << "\nSecond set of weekdays:" << std::endl;
     for (const auto& day : weekdays2) {
-        std::cout << day << std::endl;
+        std::cout << day << " ";
     }
+    std::cout << endl;
 
     return SUCCESS; // functional: returns a success/failure code
 }
