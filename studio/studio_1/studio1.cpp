@@ -2,6 +2,7 @@
    of Kernighan and Ritchie's The C Programming Language, 2nd. Ed. */
 
 #include <iostream> // for cout ostream and endl manipulator
+#include "MyStruct.h"
 
 using namespace std; // optional, could say std::cout and std::endl below instead
 
@@ -9,7 +10,10 @@ const int SUCCESS = 0; // by convention, where non-zero results are error codes
 
 int main (int argc, char** argv) { // argc and argv not used, but their types are specified
 
-    // cout << "hello, world!" << endl; // procedural: has an effect
+    MyStruct obj1(42);
+    MyStruct obj2(17);
+    
+    cout << obj1.value << " " << obj2.value << endl;
 
     return SUCCESS; // functional: returns a success/failure code
 }
