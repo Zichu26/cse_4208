@@ -24,14 +24,10 @@ std::ostream& operator<<(std::ostream& os, const PinochleRank& rank);
 
 PinochleRank& operator++(PinochleRank& rank);
 
-class PinochleDeck : public Deck {
-private:
-    std::vector<Card<PinochleRank, Suit>> cards;
+class PinochleDeck : public Deck<PinochleRank, Suit> {
 
 public:
     PinochleDeck();
-
-    void print(std::ostream& os) const override;
 };
 
 #endif // PINOCHLEDECK_H

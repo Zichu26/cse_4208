@@ -5,9 +5,13 @@
 
 #include <iostream>
 
-class Deck {
+template <typename R, typename S>
+class Deck : public CardSet<R, S> {
 public:
-    virtual void print(std::ostream& os) const = 0;
 };
+
+#ifdef TEMPLATE_HEADERS_INCLUDE_SOURCE
+#include "Deck.cpp"
+#endif
 
 #endif // DECK_H

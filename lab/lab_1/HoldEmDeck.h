@@ -31,14 +31,9 @@ std::ostream& operator<<(std::ostream& os, const HoldEmRank& rank);
 
 HoldEmRank& operator++(HoldEmRank& rank);
 
-class HoldEmDeck : public Deck {
-private:
-    std::vector<Card<HoldEmRank, Suit>> cards;
-
+class HoldEmDeck : public Deck<HoldEmRank, Suit> {
 public:
     HoldEmDeck(); 
-
-    void print(std::ostream& os) const override;
 };
 
 #endif // HOLDEMDECK_H
