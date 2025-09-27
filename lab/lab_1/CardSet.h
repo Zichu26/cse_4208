@@ -14,7 +14,7 @@ protected:
     std::vector< Card<R, S> > cards;
 
 public:
-    void print(std::ostream& os, size_t cardsInRow) const ;
+    void print(std::ostream& os, size_t cardsInRow) const;
 };
 
 #ifdef TEMPLATE_HEADERS_INCLUDE_SOURCE

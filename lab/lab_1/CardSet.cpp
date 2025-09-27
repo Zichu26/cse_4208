@@ -6,7 +6,7 @@
 #include "CardSet.h"
 
 template <typename R, typename S>
-void CardSet<R, S>::print(std::ostream& os, size_t cardInRow) {
+void CardSet<R, S>::print(std::ostream& os, size_t cardInRow) const {
     size_t i = 0; // card index
     
     for (typename std::vector< Card<R, S> >::iterator card = cards.begin(); card != cards.end(); ++card) const {
