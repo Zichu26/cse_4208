@@ -9,6 +9,7 @@ template <typename T>
 class MyStruct;
 
 // forward declaration
+template <typename T>
 ostream& operator<<(ostream& os, const MyStruct<T>& obj);
 
 template <typename T = int>
