@@ -10,8 +10,8 @@ const int SUCCESS = 0; // by convention, where non-zero results are error codes
 
 int main (int argc, char** argv) { // argc and argv not used, but their types are specified
 
-    MyStruct obj1(42);
-    MyStruct obj2(17);
+    MyStruct obj1(1);
+    MyStruct obj2(2);
     
     cout << obj1.value << " " << obj2.value << endl;
 
