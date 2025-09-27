@@ -2,14 +2,15 @@
    of Kernighan and Ritchie's The C Programming Language, 2nd. Ed. */
 
 #include <iostream> // for cout ostream and endl manipulator
+#include "Weekday.h"
 
 using namespace std; // optional, could say std::cout and std::endl below instead
 
 const int SUCCESS = 0; // by convention, where non-zero results are error codes
 
 int main (int argc, char** argv) { // argc and argv not used, but their types are specified
-
-    cout << ":3" << endl;
+    Weekday today = Weekday::Wednesday;
+    std::cout << today << std::endl;
 
     return SUCCESS; // functional: returns a success/failure code
 }
