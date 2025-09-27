@@ -33,5 +33,6 @@ int main() {
 
     auto bound_func = std::bind(composed_func, value);
     std::cout << "bound_func(): " << bound_func() << std::endl;
+    
     return 0;
 }

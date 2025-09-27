@@ -55,6 +55,13 @@
     Output:
         Value: 1.5
         composed_func(1.5): 0.0706782
+7.
+    Code:
+        auto bound_func = std::bind(composed_func, value);
+        std::cout << "bound_func(): " << bound_func() << std::endl;
+
+    Output:
+        bound_func(): 0.0706782
 
 
     
