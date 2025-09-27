@@ -14,9 +14,9 @@ void CardSet<R, S>::print(std::ostream& os, size_t cardInRow) const {
         os << *card;    // de-reference since card is an iterator
         '''
             (i + 1) % cardInRow != 0 --> true if card is not at end of row
-            card + 1 != cards.end() --> true if card is not last card
+            std::next(card) != cards.end() --> true if card is not last card
         '''
-        if ((i + 1) % cardInRow != 0 && card + 1 != cards.end()) {
+        if ((i + 1) % cardInRow != 0 && std::next(card) != cards.end()) {
             os << " ";
         }
         ++i;
