@@ -16,5 +16,15 @@ int main() {
     holdEmDeck.print(std::cout, 13);
     std::cout << std::endl;
 
+    pinochleDeck.shuffle();
+    std::cout << "Pinochle Deck:" << std::endl;
+    pinochleDeck.print(std::cout, 6);
+    std::cout << std::endl;
+
+    holdEmDeck.shuffle();
+    std::cout << "Texas Hold 'Em Deck:" << std::endl;
+    holdEmDeck.print(std::cout, 13);
+    std::cout << std::endl;
+
     return 0;
 }
