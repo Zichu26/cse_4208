@@ -13,7 +13,7 @@ protected:
     PinochleDeck deck;
     std::vector<CardSet<PinochleRank, Suit>> hands;
     virtual void deal();
-    void printHands() const;
+    void printPlayerHands() const;
     void collectCards();
 
 public:
