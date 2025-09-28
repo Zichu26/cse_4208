@@ -47,7 +47,7 @@ void usageMessage(const char* programName) {
 int parseArguments(int argc, const char* argv[]) {
     // this check is necessary so that calculating numPlayers don't fail
     if (argc < 3) {
-        printUsageMessage(argv[PROGRAM_NAME_INDEX]);
+        usageMessage(argv[PROGRAM_NAME_INDEX]);
         return ERROR_TOO_FEW_ARGS;
     }
     
@@ -55,18 +55,18 @@ int parseArguments(int argc, const char* argv[]) {
 
     if (std::strcmp(argv[GAME_TYPE_INDEX], "Pinochle") == 0) {
         if (numPlayers != PINOCHLE_PLAYERS) {
-            printUsageMessage(argv[PROGRAM_NAME_INDEX]);
+            usageMessage(argv[PROGRAM_NAME_INDEX]);
             return ERROR_WRONG_PINOCHLE_PLAYERS;
         }
     }
     else if (std::strcmp(argv[GAME_TYPE_INDEX], "HoldEm") == 0) {
         if (numPlayers < HOLDEM_MIN_PLAYERS || numPlayers > HOLDEM_MAX_PLAYERS) {
-            printUsageMessage(argv[PROGRAM_NAME_INDEX]);
+            usageMessage(argv[PROGRAM_NAME_INDEX]);
             return ERROR_WRONG_HOLDEM_PLAYERS;
         }
     }
     else {
-        printUsageMessage(argv[PROGRAM_NAME_INDEX]);
+        usageMessage(argv[PROGRAM_NAME_INDEX]);
         return ERROR_UNKNOWN_GAME;
     }
     
