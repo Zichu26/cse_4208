@@ -21,7 +21,7 @@ void PinochleGame::deal() {
     }
 }
 
-void PinochleGame::printPlayerHands() const {
+void PinochleGame::printPlayerHands() {
     std::cout << R"(
     ✨(≧◡≦) ♡ Time to reveal everyone's magical hands! ♡ (≧◡≦)✨
     )" << std::endl;
