@@ -16,7 +16,7 @@ bool Game::promptEndGame() const {
     std::cout << R"(
     (｡•́︿•̀｡) Aww... is it time to say goodbye already?
 
-    💭 Would you like to end the game? (yes/no): 
+      Would you like to end the game? (yes/no): 
     )";
 
     std::string response;
@@ -26,7 +26,7 @@ bool Game::promptEndGame() const {
         return true;
     } else {
         std::cout << R"(
-        (ง •̀_•́)ง Yatta! Let’s keep going! The fun’s not over yet~! 🌟
+        (ง •̀_•́)ง Yatta! Let's keep going! The fun's not over yet~!
         )" << std::endl;
         return false;
     }

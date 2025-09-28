@@ -23,18 +23,18 @@ void PinochleGame::deal() {
 
 void PinochleGame::printPlayerHands() {
     std::cout << R"(
-    ✨(≧◡≦) ♡ Time to reveal everyone's magical hands! ♡ (≧◡≦)✨
+     (≧◡≦) ♡ Time to reveal everyone's magical hands! ♡ (≧◡≦) 
     )" << std::endl;
 
     for (size_t i = 0; i < players.size(); ++i) {
-        std::cout << "\n🌟 " << players[i] << "'s hand appears... ✨" << std::endl;
+        std::cout << "\n  " << players[i] << "'s hand appears...  " << std::endl;
         hands[i].print(std::cout, 8);
 
         std::cout << "(*^▽^*) So pretty~!\n";
     }
 
     std::cout << R"(
-    (๑˃ᴗ˂)ﻭ All hands revealed! Let the magic continue~ 🌈
+    (๑˃ᴗ˂)ﻭ All hands revealed! Let the magic continue~  
     )" << std::endl;
 }
 
@@ -51,7 +51,7 @@ int PinochleGame::play() {
     ☆*:.｡. Let's have a fun time playing! .｡.:*☆
     )" << std::endl;
 
-    std::cout << "✨ Players joining the fun: " << players.size() << " ✨" << std::endl;
+    std::cout << "  Players joining the fun: " << players.size()  << std::endl;
     
     while (true) {
         std::cout << R"(
@@ -71,8 +71,8 @@ int PinochleGame::play() {
         
         if (promptEndGame()) {
             std::cout << R"(
-            (＾▽＾)／ Thanks for playing Magical Pinochle~!!
-            🌈 Until next time, stay sparkly! ✨
+            (＾▽＾)/ Thanks for playing Magical Pinochle~!!
+              Until next time, stay sparkly! 
             )" << std::endl;
             return 0; 
         }
