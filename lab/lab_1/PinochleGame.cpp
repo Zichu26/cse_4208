@@ -28,7 +28,7 @@ void PinochleGame::printPlayerHands() const {
 
     for (size_t i = 0; i < players.size(); ++i) {
         std::cout << "\n🌟 " << players[i] << "'s hand appears... ✨" << std::endl;
-        (CardSet<PinochleRank, Suit>&(hands[i])).print(std::cout, 8);
+        hands[i].print(std::cout, 8);
 
         std::cout << "(*^▽^*) So pretty~!\n";
     }
