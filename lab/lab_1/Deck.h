@@ -10,6 +10,7 @@ template <typename R, typename S>
 class Deck : public CardSet<R, S> {
 public:
     void shuffle();
+    void collect(CardSet<R, S>& cardSet);
 };
 
 #ifdef TEMPLATE_HEADERS_INCLUDE_SOURCE
