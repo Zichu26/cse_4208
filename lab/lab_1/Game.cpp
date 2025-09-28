@@ -13,11 +13,7 @@ Game::Game(int argc, const char* argv[]) {
 }
 
 bool Game::promptEndGame() const {
-    std::cout << R"(
-    (｡•́︿•̀｡) Aww... is it time to say goodbye already?
-
-      Would you like to end the game? (yes/no): 
-    )";
+    std::cout << "Would you like to end the game? (yes/[anything else will end game]): ";
 
     std::string response;
     std::cin >> response;
@@ -25,9 +21,6 @@ bool Game::promptEndGame() const {
     if (response == "yes") {
         return true;
     } else {
-        std::cout << R"(
-        (ง •̀_•́)ง Yatta! Let's keep going! The fun's not over yet~!
-        )" << std::endl;
         return false;
     }
 }
