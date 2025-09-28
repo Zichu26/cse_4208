@@ -22,20 +22,10 @@ void PinochleGame::deal() {
 }
 
 void PinochleGame::printPlayerHands() {
-    std::cout << R"(
-     (≧◡≦) ♡ Time to reveal everyone's magical hands! ♡ (≧◡≦) 
-    )" << std::endl;
-
     for (size_t i = 0; i < players.size(); ++i) {
-        std::cout << "\n  " << players[i] << "'s hand appears...  " << std::endl;
+        std::cout << "\n  " << players[i] << "'s hand:" << std::endl;
         hands[i].print(std::cout, 8);
-
-        std::cout << "(*^▽^*) So pretty~!\n";
     }
-
-    std::cout << R"(
-    (๑˃ᴗ˂)ﻭ All hands revealed! Let the magic continue~  
-    )" << std::endl;
 }
 
 void PinochleGame::collectCards() {
@@ -45,35 +35,18 @@ void PinochleGame::collectCards() {
 }
 
 int PinochleGame::play() {
-    std::cout << R"(
-    ☆*:.｡. o(≧▽≦)o .｡.:*☆
-    ~*~ Welcome to the Magical World of Pinochle! ~*~
-    ☆*:.｡. Let's have a fun time playing! .｡.:*☆
-    )" << std::endl;
+    std::cout << "Pinochle" << std::endl;
 
-    std::cout << "  Players joining the fun: " << players.size()  << std::endl;
-    
+    std::cout << "Number of Players: " << players.size()  << std::endl;
+    int round_number = 1;
     while (true) {
-        std::cout << R"(
-        (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ === New Round is Beginning! === ✧ﾟ･: *ヽ(◕ヮ◕ヽ)
-        )" << std::endl;
-
-        std::cout << "  Shuffling the magic deck... *shuffa shuffa~*" << std::endl;
+        std::cout << "Round " << round_number << std::endl;
         deck.shuffle();
-    
-        std::cout << "  Dealing cards... Here you go! (*≧ω≦)" << std::endl;
         deal();
-        
         printPlayerHands();
-        
-        std::cout << "  Gathering all the cards back... Thank you, cards! (ღ✪v✪)ღ" << std::endl;
         collectCards();
-        
         if (promptEndGame()) {
-            std::cout << R"(
-            (＾▽＾)/ Thanks for playing Magical Pinochle~!!
-              Until next time, stay sparkly! 
-            )" << std::endl;
+            std::cout << "Game Over" << std::endl;
             return 0; 
         }
     }
