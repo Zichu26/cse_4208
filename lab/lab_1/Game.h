@@ -9,7 +9,7 @@
 class Game {
 protected:
     std::vector<std::string> players;
-    bool promptEndGame const;
+    bool promptEndGame() const;
 
 public:
     // Design decision: argc, argv[] are already pre-parsed the first
