@@ -9,6 +9,7 @@ add_executable(${PROJ}
     Suit.cpp
     Game.cpp
     PinochleGame.cpp
+    HoldEmGame.cpp
 )
 set_target_properties(${PROJ} PROPERTIES
     CXX_STANDARD 17
