@@ -18,6 +18,7 @@ void Deck<R, S>::shuffle() {
                  randomNumberGen);
 }
 
+template <typename R, typename S>
 void Deck<R, S>::collect(CardSet<R, S>& cardSet) {
     while (!cardSet.is_empty()) {
         cardSet >> *this;
