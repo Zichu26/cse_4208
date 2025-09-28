@@ -9,6 +9,7 @@
 #include <vector>
 
 const int PACKET_SIZE = 3;
+const int CARDS_PER_LINE = 8;
 
 class PinochleGame : public Game {
 protected:
