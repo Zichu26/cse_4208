@@ -6,7 +6,8 @@
 #include "PinochleGame.h"
 
 int main() {
-    PinochleGame tmp(3, ["Peter", "Jack", "Dom"]);
+    const char* argv[] = { "Peter", "Jack", "Dom" };
+    PinochleGame tmp(3, argv);
     tmp.play();
 
     return 0;
