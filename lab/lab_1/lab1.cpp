@@ -1,5 +1,6 @@
 // lab1.cpp Zichu Pan p.zichu@wustl.edu
-// Entry point of program, prints out default Pinochle deck and hold 'em deck.
+// Entry point of program that creates and runs card games based on command line arguments.
+// Supports Pinochle (4 players) and HoldEm (2-9 players) games.
 #include <iostream>
 #include <memory>
 #include <cstring>
@@ -86,6 +87,6 @@ int main(int argc, const char* argv[]) {
     else {
         return ERROR_GAME_CREATION_FAILED;
     }
-    
+
     return 0;
 }
