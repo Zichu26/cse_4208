@@ -49,6 +49,7 @@ int PinochleGame::play() {
             std::cout << "Game Over" << std::endl;
             return 0; 
         }
+        round_number++;
     }
 }
 

@@ -50,7 +50,9 @@ void HoldEmGame::deal() {
 
 int HoldEmGame::play() {
     std::cout << "Hold'Em" << std::endl;
+    int round_number = 1;
     while (true) {
+        std::cout << "Round " << round_number << std::endl;
         // Preflop
         deck.shuffle();
         state = HoldEmState::preflop;
@@ -88,5 +90,6 @@ int HoldEmGame::play() {
         if (promptEndGame()) {
             return 0;  
         }
+        round_number++;
     }
 }

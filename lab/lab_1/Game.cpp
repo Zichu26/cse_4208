@@ -13,6 +13,7 @@ Game::Game(int argc, const char* argv[]) {
 }
 
 bool Game::promptEndGame() const {
+    std::cout << std::endl;
     std::cout << "Would you like to end the game? (yes/[anything else will continue game]): ";
 
     std::string response;
