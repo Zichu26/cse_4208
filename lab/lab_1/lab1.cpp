@@ -3,6 +3,7 @@
 #include <iostream>
 #include "PinochleDeck.h"
 #include "HoldEmDeck.h"
+#include "PinochleGame.h"
 
 int main() {
     PinochleGame tmp(3, ["Peter", "Jack", "Dom"]);
