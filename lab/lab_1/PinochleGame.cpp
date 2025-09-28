@@ -58,15 +58,15 @@ int PinochleGame::play() {
         (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ === New Round is Beginning! === ✧ﾟ･: *ヽ(◕ヮ◕ヽ)
         )" << std::endl;
 
-        std::cout << "🎴 Shuffling the magic deck... *shuffa shuffa~*" << std::endl;
+        std::cout << "  Shuffling the magic deck... *shuffa shuffa~*" << std::endl;
         deck.shuffle();
     
-        std::cout << "📦 Dealing cards... Here you go! (*≧ω≦)" << std::endl;
+        std::cout << "  Dealing cards... Here you go! (*≧ω≦)" << std::endl;
         deal();
         
         printPlayerHands();
         
-        std::cout << "💫 Gathering all the cards back... Thank you, cards! (ღ✪v✪)ღ" << std::endl;
+        std::cout << "  Gathering all the cards back... Thank you, cards! (ღ✪v✪)ღ" << std::endl;
         collectCards();
         
         if (promptEndGame()) {
