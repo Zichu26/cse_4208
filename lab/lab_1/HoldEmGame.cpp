@@ -79,7 +79,6 @@ int HoldEmGame::play() {
         deal();
         std::cout << "BOARD (river): ";
         board.print(std::cout, 5);
-        std::cout << std::endl;
         
         // Collect all cards back to deck
         for (size_t i = 0; i < hands.size(); ++i) {
