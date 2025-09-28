@@ -9,8 +9,8 @@ int main() {
     PinochleGame tmp(3, argv);
     tmp.play();
 
-    HoldEmGame tmp(3, argv);
-    tmp.play();
+    HoldEmGame tmp1(3, argv);
+    tmp1.play();
 
     return 0;
 }
