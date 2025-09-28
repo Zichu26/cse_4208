@@ -17,6 +17,7 @@ bool Game::promptEndGame() const {
 
     std::string response;
     std::cin >> response;
+    std::cout << std::endl;
 
     if (response == "yes") {
         return true;

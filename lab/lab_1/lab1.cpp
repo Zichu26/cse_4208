@@ -6,8 +6,8 @@
 
 int main() {
     const char* argv[] = { "Peter", "Jack", "Dom" };
-    // PinochleGame tmp(3, argv);
-    // tmp.play();
+    PinochleGame tmp(3, argv);
+    tmp.play();
 
     HoldEmGame tmp(3, argv);
     tmp.play();

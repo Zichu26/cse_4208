@@ -49,6 +49,7 @@ void HoldEmGame::deal() {
 }
 
 int HoldEmGame::play() {
+    std::cout << "Hold'Em" << std::endl;
     while (true) {
         // Preflop
         deck.shuffle();
