@@ -11,11 +11,12 @@
 const int PROGRAM_NAME_INDEX = 0;
 const int GAME_TYPE_INDEX = 1;
 const int FIRST_PLAYER_INDEX = 2;
+const int ARGUMENTS_TO_DROP = 2;
+const int MIN_REQUIRED_CMDS = 3;
 
 const int PINOCHLE_PLAYERS = 4;
 const int HOLDEM_MIN_PLAYERS = 2;
 const int HOLDEM_MAX_PLAYERS = 9;
-const int ARGUMENTS_TO_DROP = 2;
 
 const int SUCCESS = 0;
 const int ERROR_TOO_FEW_ARGS = 1;
@@ -47,7 +48,7 @@ void usageMessage(const char* programName) {
 
 int parseArguments(int argc, const char* argv[]) {
     // this check is necessary so that calculating numPlayers don't fail
-    if (argc < 3) {
+    if (argc < MIN_REQUIRED_CMDS) {
         usageMessage(argv[PROGRAM_NAME_INDEX]);
         return ERROR_TOO_FEW_ARGS;
     }
