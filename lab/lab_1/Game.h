@@ -13,7 +13,7 @@ protected:
 
 public:
     // Design decision: argc, argv[] are already pre-parsed the first
-    // two elements [program name] and [game name] is already dropped
+    // two elements [program name] and [game name] are already dropped
     Game(int argc, const char* argv[]);
     
     virtual int play() = 0;
