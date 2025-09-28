@@ -3,7 +3,7 @@
 #include <string>
 
 PinochleGame::PinochleGame(int argc, const char* argv[]) : Game(argc, argv) {
-    for (int i = 0; i < numPlayers; ++i) {
+    for (int i = 0; i < argc; ++i) {
         hands.push_back(CardSet<PinochleRank, Suit>());
     }
 }
