@@ -23,7 +23,7 @@ void PinochleGame::deal() {
 
 void PinochleGame::printPlayerHands() {
     for (size_t i = 0; i < players.size(); ++i) {
-        std::cout << "\n  " << players[i] << "'s hand:" << std::endl;
+        std::cout << "\n" << players[i] << "'s hand:" << std::endl;
         hands[i].print(std::cout, 8);
     }
 }
