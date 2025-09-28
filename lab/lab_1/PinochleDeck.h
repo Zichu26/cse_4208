@@ -10,6 +10,8 @@
 #include "Card.h"
 #include "Deck.h"
 
+int const COPIES_RANK_SUIT_COMBINATION = 2;
+
 enum class PinochleRank {
     nine,
     jack,

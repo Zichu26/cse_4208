@@ -15,6 +15,7 @@ const int FIRST_PLAYER_INDEX = 2;
 const int PINOCHLE_PLAYERS = 4;
 const int HOLDEM_MIN_PLAYERS = 2;
 const int HOLDEM_MAX_PLAYERS = 9;
+const int ARGUMENTS_TO_DROP = 2;
 
 const int SUCCESS = 0;
 const int ERROR_TOO_FEW_ARGS = 1;
@@ -27,10 +28,10 @@ std::shared_ptr<Game> create(int argc, const char* argv[]) {
     std::shared_ptr<Game> game;
 
    if (std::strcmp(argv[1], "Pinochle") == 0) {
-        game = std::make_shared<PinochleGame>(argc - 2, argv + 2);
+        game = std::make_shared<PinochleGame>(argc - ARGUMENTS_TO_DROP, argv + ARGUMENTS_TO_DROP);
     } 
     else if (std::strcmp(argv[1], "HoldEm") == 0) {
-        game = std::make_shared<HoldEmGame>(argc - 2, argv + 2);
+        game = std::make_shared<HoldEmGame>(argc - ARGUMENTS_TO_DROP, argv + ARGUMENTS_TO_DROP);
     }
 
     return game;

@@ -26,7 +26,7 @@ PinochleRank& operator++(PinochleRank& rank) {
 }
 
 PinochleDeck::PinochleDeck() {
-    for (int i = 0; i < 2; ++i) { 
+    for (int i = 0; i < COPIES_RANK_SUIT_COMBINATION; ++i) { 
         for (Suit s = Suit::clubs; s != Suit::undefined; ++s) {
             for (PinochleRank r = PinochleRank::nine; r != PinochleRank::undefined; ++r) {
                 cards.emplace_back(r, s);

@@ -25,7 +25,7 @@ void HoldEmGame::deal() {
             
         case HoldEmState::flop:
             // Deal 3 card to board
-            for (int i = 0; i < 3; ++i) {
+            for (int i = 0; i < DEAL_FLOP; ++i) {
                 deck >> board;
             }
             state = HoldEmState::turn;
@@ -59,26 +59,26 @@ int HoldEmGame::play() {
         deal();
         for (size_t i = 0; i < players.size(); ++i) {
             std::cout << players[i] << "'s hand: ";
-            hands[i].print(std::cout, 5);
+            hands[i].print(std::cout, CARDS_PER_LIN);
             std::cout << std::endl;
         }
         
         // Flop
         deal();
         std::cout << "BOARD (flop): ";
-        board.print(std::cout, 5);
+        board.print(std::cout, CARDS_PER_LIN);
         std::cout << std::endl;
         
         // Turn
         deal();
         std::cout << "BOARD (turn): ";
-        board.print(std::cout, 5);
+        board.print(std::cout, CARDS_PER_LIN);
         std::cout << std::endl;
         
         // River
         deal();
         std::cout << "BOARD (river): ";
-        board.print(std::cout, 5);
+        board.print(std::cout, CARDS_PER_LIN);
         
         // Collect all cards back to deck
         for (size_t i = 0; i < hands.size(); ++i) {

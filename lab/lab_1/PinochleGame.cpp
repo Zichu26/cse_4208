@@ -9,7 +9,6 @@ PinochleGame::PinochleGame(int argc, const char* argv[]) : Game(argc, argv) {
 }
 
 void PinochleGame::deal() {
-    const int PACKET_SIZE = 3;
     while (!deck.is_empty()) {
         // Deal card to each player
         for (size_t playerIndex = 0; playerIndex < hands.size(); ++playerIndex) {

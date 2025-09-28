@@ -8,6 +8,8 @@
 #include "CardSet.h"
 #include <vector>
 
+const int PACKET_SIZE = 3;
+
 class PinochleGame : public Game {
 protected:
     PinochleDeck deck;
