@@ -14,6 +14,14 @@ Errors:
     that can only read) instead.
 
 Testing and output:
+    Exit code used:
+        const int SUCCESS = 0;
+        const int ERROR_TOO_FEW_ARGS = 1;
+        const int ERROR_WRONG_PINOCHLE_PLAYERS = 2;
+        const int ERROR_WRONG_HOLDEM_PLAYERS = 3;
+        const int ERROR_UNKNOWN_GAME = 4;
+        const int ERROR_GAME_CREATION_FAILED = 5;
+
     ./build/lab1 Pinochle Alice Bob Charlie David
     Output: 
         correct behavior, each player have 12 cards and in combination the cards makes up the deck
@@ -36,10 +44,30 @@ Testing and output:
     Output:
         correct behavior
 
-    Testing invalid Commands
-        ./lab1                                # No arguments
-        ./lab1 Pinochle                      # Game type but no players
-        ./lab1 HoldEm                        # Game type but no players
+    Testing invalid commands
+        ./lab1                                
+        ./lab1 Pinochle                     
+        ./lab1 HoldEm     
+    Output:
+        correct behavior + exit code 1
+
+    Testing wrong num players Pinochle:
+        .lab1 Pinochle P1 P2 P3 P4 P5 P6   
+    Output:
+        correct behavior + exit code 2
+
+    Testing wrong num players HoldEm:
+        ./lab1 HoldEm Alice
+    Output:
+        correct behavior + exit code 3
+
+    Testing wrong game name:
+        ./lab1 Poker Alice Bob Charlie  
+    Output:
+        correct behavior + exit code 4
+
+                    
+    
 
 
 
