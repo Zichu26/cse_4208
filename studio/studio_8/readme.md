@@ -93,3 +93,19 @@ DerivedClass::print()
 Calling print() on derived ptr to derived:
 DerivedClass::print()
 ```
+8. When we delete the base ptr to the derived class, only `BaseClass::~BaseClass()` is called, not `DerivedClass::~DerivedClass()`. The derived class destructor is skipped and  thus causes a resource leak.
+```
+/home/compute/p.zichu/cse_4208/studio/studio_8/studio8.cpp: In function ‘int main()’:
+/home/compute/p.zichu/cse_4208/studio/studio_8/studio8.cpp:71:12: warning: deleting object of polymorphic class type ‘BaseClas
+s’ which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
+     delete base_ptr3;
+            ^~~~~~~~~
+/home/compute/p.zichu/cse_4208/studio/studio_8/studio8.cpp:72:12: warning: deleting object of polymorphic class type ‘BaseClas
+s’ which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
+     delete base_ptr4;
+            ^~~~~~~~~
+/home/compute/p.zichu/cse_4208/studio/studio_8/studio8.cpp:73:12: warning: deleting object of polymorphic class type ‘DerivedC
+lass’ which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
+     delete derived_ptr5;
+```
+9. 

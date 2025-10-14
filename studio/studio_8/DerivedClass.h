@@ -6,7 +6,7 @@
 class DerivedClass : public BaseClass {
 public:
     DerivedClass();
-    ~DerivedClass();
+    virtual ~DerivedClass();
     virtual void print();
 };
 

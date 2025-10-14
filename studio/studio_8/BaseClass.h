@@ -4,7 +4,7 @@
 class BaseClass {
 public:
     BaseClass();
-    ~BaseClass();
+    virtual ~BaseClass();
     virtual void print();
 };
 
