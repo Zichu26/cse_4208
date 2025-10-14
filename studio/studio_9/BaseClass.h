@@ -1,6 +1,8 @@
 #ifndef BASECLASS_H
 #define BASECLASS_H
 
+#include <string>
+
 class BaseClass {
 public:
     std::string base_name;
