@@ -110,4 +110,4 @@ MyStruct result2 = passByValue(m); // copy constructor called twice, once for cr
 MyStruct n(m); // copy constructor called once
 MyStruct result3 = passByValue(n); // copy constructor called twice, once for creating parameter n, once for creating result
 ```
-8. 
+8. You get a compiler error saying the constructor is private and cannot be accessed from `main()`. You cannot create variables using default construction and the compiler does not supply its own default constructor.

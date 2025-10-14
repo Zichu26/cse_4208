@@ -35,7 +35,6 @@ int main() {
     // MyStruct n(m); // copy constructor called once
     // MyStruct result3 = passByValue(n); // copy constructor called twice, once for creating parameter n, once for creating result
 
-    cout << "=== Creating m with default constructor ===" << endl;
-    MyStruct m; // Attempt default construction
+    MyStruct m;
     cout << "m.x is " << m.x() << " and m.y is " << m.y() << endl;
 }
