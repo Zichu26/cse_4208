@@ -7,6 +7,5 @@ public:
     DerivedClass();
     virtual ~DerivedClass();
     virtual void print();
-    static std::string DerivedClass::* getNamePointer();
 };
 #endif
