@@ -31,19 +31,6 @@ int main() {
     MyStruct result1 = passByValue(m);
     m.setX(7).setY(3);
     MyStruct result2 = passByValue(m);
-    
-    // cout << "=== Calling passByValue(m) after mutation ===" << endl;
-    // MyStruct result2 = passByValue(m);
-    // cout << "Returned object address: " << &result2 << endl;
-    // cout << endl;
-    
-    // cout << "=== Creating n with copy constructor ===" << endl;
-    // MyStruct n(m); // copy construction
-    // cout << "n.x = " << n.x() << " and n.y = " << n.y() << endl;
-    // cout << endl;
-    
-    // cout << "=== Calling passByValue(n) ===" << endl;
-    // MyStruct result3 = passByValue(n);
-    // cout << "Returned object address: " << &result3 << endl;
-    
+    MyStruct n(m);
+     MyStruct result3 = passByValue(n);
 }
