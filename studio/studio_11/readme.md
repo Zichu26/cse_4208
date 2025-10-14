@@ -18,3 +18,13 @@ Destructor: destroying object at 0x7ffedc404470 with str = "hello"
 Destructor: destroying object at 0x7ffedc404490 with str = "hello"
 ```
 5. 
+```
+Constructor: constructing object at 0x7ffe1d1fa1d0 with str = "hello"
+Constructor: constructing object at 0x7ffe1d1fa1b0 with str = "goodbye"
+Constructor: constructing object at 0x7ffe1d1fa190 with str = "bro"
+Assignment operator: assigning to object at 0x7ffe1d1fa1b0 with str = "goodbye" from object at 0x7ffe1d1fa1d0 with str = "hello"
+Assignment operator: assigning to object at 0x7ffe1d1fa190 with str = "bro" from object at 0x7ffe1d1fa1b0 with str = "hello"
+Destructor: destroying object at 0x7ffe1d1fa190 with str = "hello"
+Destructor: destroying object at 0x7ffe1d1fa1b0 with str = "hello"
+Destructor: destroying object at 0x7ffe1d1fa1d0 with str = "hello"
+```
