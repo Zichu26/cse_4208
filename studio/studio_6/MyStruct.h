@@ -7,7 +7,7 @@ private:
     int y;
 
 public:
-    MyStruct();
+    MyStruct() = default;
     MyStruct(const MyStruct& other);
     int getX() const;
     int getY() const;
