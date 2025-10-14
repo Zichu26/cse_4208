@@ -68,9 +68,9 @@ int main() {
     std::cout << "Calling print() on derived ptr to derived:" << std::endl;
     derived_ptr5->print();
 
-    delete base_ptr1;
-    delete base_ptr2;
-    delete derived_ptr;
+    delete base_ptr3;
+    delete base_ptr4;
+    delete derived_ptr5;
 
     int success = 0;
     return success;
