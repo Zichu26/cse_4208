@@ -69,4 +69,12 @@ DerivedClass::print()
 Calling print() on derived ptr to derived):
 DerivedClass::print()
 ```
-
+7. 
+```
+Calling print() on base ptr to base
+BaseClass::print()
+Calling print() on base ptr to derived:
+DerivedClass::print()
+Calling print() on derived ptr to derived:
+DerivedClass::print()
+```
