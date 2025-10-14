@@ -33,3 +33,10 @@ Destructor: destroying object at 0x7ffe1d1fa1d0 with str = "hello"
 Constructor: constructing object at 0x192deb0 with str = "hello"
 Destructor: destroying object at 0x192deb0 with str = "hello"
 ```
+7. 
+```
+Constructor: constructing object at 0x25c5eb0 with str = "hello"
+print(): object at 0x25c5eb0 with str = "hello"
+Destructor: destroying object at 0x25c5eb0 with str = "hello"
+```
+8. 
