@@ -1,6 +1,8 @@
 #include <iostream>
 #include "MyStruct.h"
 
+using namespace std;
+
 int main() {
     // MyStruct s1;
     // std::cout << "x: " << s1.getX() << std::endl;
