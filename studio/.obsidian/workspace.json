@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "studio_9/readme.md",
+                "file": "studio_10/readme.md",
                 "mode": "source",
                 "source": false
               },
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "studio_9/readme.md",
+                "file": "studio_10/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "studio_9/readme.md",
+                "file": "studio_10/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "studio_9/readme.md",
+                "file": "studio_10/readme.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -171,6 +171,8 @@
   },
   "active": "23b17f8b7e4c9b7e",
   "lastOpenFiles": [
+    "studio_9/readme.md",
+    "studio_10/readme.md",
     "studio_10/studio10.cpp",
     "studio_10/MyClass.cpp",
     "studio_10/MyClass.h",
@@ -180,10 +182,8 @@
     "studio_8/readme.md",
     "studio_9/studio9.cpp",
     "studio_9/studio8.cpp",
-    "studio_9/readme.md",
     "studio_9/DerivedClass.h",
     "studio_9/DerivedClass.cpp",
-    "studio_9/CMakeLists.txt",
     "studio_7/readme.md",
     "studio_6/readme.md"
   ]
