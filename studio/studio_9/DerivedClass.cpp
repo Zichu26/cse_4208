@@ -1,7 +1,7 @@
 #include "DerivedClass.h"
 #include <iostream>
 
-DerivedClass::DerivedClass() : : derived_name("DerivedClass") {
+DerivedClass::DerivedClass() : derived_name("DerivedClass") {
     std::cout << "DerivedClass::DerivedClass()" << std::endl;
 }
 
