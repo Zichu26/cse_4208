@@ -108,4 +108,4 @@ s’ which has non-virtual destructor might cause undefined behavior [-Wdelete-n
 lass’ which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
      delete derived_ptr5;
 ```
-9. 
+9. When you delete an object through a base class pointer, C++ needs to know which destructor to call. With a non-virtual destructor, it uses static binding and only calls the base class destructor. With a virtual destructor, it uses dynamic binding and calls the correct derived class destructor first, which then chains to the base class destructor.
