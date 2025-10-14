@@ -1,12 +1,12 @@
-#ifndef BASE_H
-#define BASE_H
+#ifndef BASECLASS_H
+#define BASECLASS_H
 
-#include <string>
-
-class Base {
+class BaseClass {
 public:
-    std::string class_name;
-    Base();
+    std::string name;
+    BaseClass();
+    virtual ~BaseClass();
+    virtual void print();
 };
 
 #endif

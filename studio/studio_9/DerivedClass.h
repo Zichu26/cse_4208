@@ -1,11 +1,13 @@
-#ifndef DERIVED_H
-#define DERIVED_H
+#ifndef DERIVEDCLASS_H
+#define DERIVEDCLASS_H
 
 #include "BaseClass.h"
 
-class Derived : public Base {
+class DerivedClass : public BaseClass {
 public:
-    Derived();
+    DerivedClass();
+    virtual ~DerivedClass();
+    virtual void print();
 };
 
 #endif

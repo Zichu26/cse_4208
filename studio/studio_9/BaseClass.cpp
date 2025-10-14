@@ -1,4 +1,14 @@
 #include "BaseClass.h"
+#include <iostream>
 
+BaseClass::BaseClass() : name("BaseClass") {
+    std::cout << "BaseClass::BaseClass()" << std::endl;
+}
 
-Base::Base() : class_name("Base") {}
+BaseClass::~BaseClass() {
+    std::cout << "BaseClass::~BaseClass()" << std::endl;
+}
+
+void BaseClass::print() {
+    std::cout << "BaseClass::print()" << std::endl;
+}
