@@ -1,11 +1,8 @@
 #include "MyClass.h"
 
 int main() {
-    MyClass obj1("hello");
-    MyClass obj2("goodbye");
-    MyClass obj3("bro");
-    
-    obj1 = obj2 = obj3;
+    std::unique_ptr<MyClass> ptr1(new MyClass("hello"));
+    std::unique_ptr<MyClass> ptr2(std::move(ptr1));
     
     int success = 0;
     return success;
