@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "studio_11/readme.md",
+                "file": "studio_2/readme.md",
                 "mode": "source",
                 "source": false
               },
@@ -171,10 +171,12 @@
   },
   "active": "23b17f8b7e4c9b7e",
   "lastOpenFiles": [
+    "studio_11/readme.md",
+    "studio_2.zip",
+    "studio_0.zip",
     "studio_11.zip",
     "studio_11/MyClass.cpp",
     "studio_10/readme.md",
-    "studio_11/readme.md",
     "studio_11/studio11.cpp",
     "studio_11/MyClass.h",
     "studio_11/CMakeLists.txt",
@@ -182,9 +184,6 @@
     "studio_10.zip",
     "studio_9/readme.md",
     "studio_10/studio10.cpp",
-    "studio_10/MyClass.cpp",
-    "studio_10/MyClass.h",
-    "studio_10/CMakeLists.txt",
     "studio_8/readme.md",
     "studio_7/readme.md",
     "studio_6/readme.md"
