@@ -7,6 +7,11 @@ class MyStruct {
 
     MyStruct();
 
+    int getX() const;
+    int getY() const;
+    MyStruct& setX(int value);
+    MyStruct& setY(int value);
+
 };
 
 #endif
