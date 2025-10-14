@@ -1,8 +1,8 @@
 #include "MyClass.h"
 
 int main() {
-    MyClass obj1;
-    MyClass obj2(obj1);
+    MyClass* ptr = new MyClass[3];
+    delete[] ptr;
     
     int success = 0;
     return success;
