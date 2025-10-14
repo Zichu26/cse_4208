@@ -29,7 +29,7 @@ int main() {
 
     MyStruct m;
     MyStruct result1 = passByValue(m);
-    m.x(7).y(3);
+    m.setX(7).setY(3);
     MyStruct result2 = passByValue(m);
     
     // cout << "=== Calling passByValue(m) after mutation ===" << endl;
