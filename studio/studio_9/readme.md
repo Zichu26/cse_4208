@@ -6,20 +6,21 @@ BaseClass::BaseClass()
 BaseClass::BaseClass()
 DerivedClass::DerivedClass()
 DerivedClass
-BaseClass
+DerivedClass
 BaseClass
 DerivedClass::~DerivedClass()
 BaseClass::~BaseClass()
 BaseClass::~BaseClass()
 ```
 ```cpp
-DerivedClass derived;
-const std::string DerivedClass::* ptr_derived = &DerivedClass::derived_name;
-const std::string DerivedClass::* ptr_base_from_derived = &DerivedClass::base_name;
-const std::string BaseClass::* ptr_base = &BaseClass::base_name;
-std::cout << derived.*ptr_derived << std::endl;
-std::cout << derived.*ptr_base_from_derived << std::endl;
-std::cout << base.*ptr_base << std::endl;
+BaseClass base_obj;
+DerivedClass derived_obj;
+std::string DerivedClass::*ptr1 = &DerivedClass::name;
+std::string BaseClass::*ptr2 = &BaseClass::name;
+std::string BaseClass::*ptr3 = &BaseClass::name;
+std::cout << derived_obj.*ptr1 << std::endl;
+std::cout << derived_obj.*ptr2 << std::endl;
+std::cout << base_obj.*ptr3 << std::endl;
 
 int success = 0;
 

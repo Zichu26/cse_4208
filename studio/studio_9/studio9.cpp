@@ -6,9 +6,9 @@ int main() {
     BaseClass base_obj;
     DerivedClass derived_obj;
     
-    std::string DerivedClass::*ptr1 = &DerivedClass::name;
-    std::string BaseClass::*ptr2 = &BaseClass::name;
-    std::string BaseClass::*ptr3 = &BaseClass::name;
+    std::string DerivedClass::*ptr1 = DerivedClass::getNamePointer();
+    std::string BaseClass::*ptr2 = DerivedClass::getNamePointer();
+    std::string BaseClass::*ptr3 = BaseClass::getNamePointer();
     
     std::cout << derived_obj.*ptr1 << std::endl;
     std::cout << derived_obj.*ptr2 << std::endl;
