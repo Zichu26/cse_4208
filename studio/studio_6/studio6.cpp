@@ -28,30 +28,30 @@ int main() {
     // cout << "n.x = " << n.getX() << " and n.y = " << n.getY() << endl;
 
     MyStruct m;
-    cout << "m.x is " << m.x() << " and m.y is " << m.y() << endl;
+    cout << "m.x is " << m.getX() << " and m.y is " << m.getY() << endl;
     cout << endl;
     
     MyStruct result1 = passByValue(m);
     cout << "Returned object address: " << &result1 << endl;
     cout << endl;
     
-    cout << "=== Mutating m ===" << endl;
-    m.x(7).y(3); // chained use of mutator functions
-    cout << "m.x is " << m.x() << " and m.y is " << m.y() << endl;
-    cout << endl;
+    // cout << "=== Mutating m ===" << endl;
+    // m.x(7).y(3); // chained use of mutator functions
+    // cout << "m.x is " << m.x() << " and m.y is " << m.y() << endl;
+    // cout << endl;
     
-    cout << "=== Calling passByValue(m) after mutation ===" << endl;
-    MyStruct result2 = passByValue(m);
-    cout << "Returned object address: " << &result2 << endl;
-    cout << endl;
+    // cout << "=== Calling passByValue(m) after mutation ===" << endl;
+    // MyStruct result2 = passByValue(m);
+    // cout << "Returned object address: " << &result2 << endl;
+    // cout << endl;
     
-    cout << "=== Creating n with copy constructor ===" << endl;
-    MyStruct n(m); // copy construction
-    cout << "n.x = " << n.x() << " and n.y = " << n.y() << endl;
-    cout << endl;
+    // cout << "=== Creating n with copy constructor ===" << endl;
+    // MyStruct n(m); // copy construction
+    // cout << "n.x = " << n.x() << " and n.y = " << n.y() << endl;
+    // cout << endl;
     
-    cout << "=== Calling passByValue(n) ===" << endl;
-    MyStruct result3 = passByValue(n);
-    cout << "Returned object address: " << &result3 << endl;
+    // cout << "=== Calling passByValue(n) ===" << endl;
+    // MyStruct result3 = passByValue(n);
+    // cout << "Returned object address: " << &result3 << endl;
     
 }
