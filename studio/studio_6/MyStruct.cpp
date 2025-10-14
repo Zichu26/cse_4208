@@ -1,7 +1,6 @@
 #include "MyStruct.h"
 
-MyStruct::MyStruct() : x(0), y(0) {
-    
+MyStruct::MyStruct(const MyStruct& other) : x_val(other.x_val), y_val(other.y_val) {
 }
 
 int MyStruct::getX() const {

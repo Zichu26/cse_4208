@@ -93,4 +93,5 @@ MyStruct& MyStruct::setY(int value) {
 	return *this;
 }
 ```
-5. 
+5. We have explicitly provided a default constructor that sets `m.x` and `m.y` to (0,0). The compiler supplies a copy constructor that performs memberwise copy.
+6. 
