@@ -72,3 +72,8 @@ std::function<void(DerivedClass&)> func_derived_base = &BaseClass::print;
 std::function<void(DerivedClass&)> func_derived = &DerivedClass::print;
 ```
 7. 
+```cpp
+auto func_base = std::mem_fn(&BaseClass::print); 
+auto func_derived_base = std::mem_fn(&BaseClass::print); 
+auto func_derived = std::mem_fn(&DerivedClass::print);
+```
