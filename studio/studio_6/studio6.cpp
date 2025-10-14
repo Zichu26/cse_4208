@@ -28,12 +28,8 @@ int main() {
     // cout << "n.x = " << n.getX() << " and n.y = " << n.getY() << endl;
 
     MyStruct m;
-    cout << "m.x is " << m.getX() << " and m.y is " << m.getY() << endl;
-    cout << endl;
     
     MyStruct result1 = passByValue(m);
-    cout << "Returned object address: " << &result1 << endl;
-    cout << endl;
     
     // cout << "=== Mutating m ===" << endl;
     // m.x(7).y(3); // chained use of mutator functions
