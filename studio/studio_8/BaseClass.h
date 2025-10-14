@@ -5,7 +5,7 @@ class BaseClass {
 public:
     BaseClass();
     ~BaseClass();
-    void print();
+    virtual void print();
 };
 
 #endif

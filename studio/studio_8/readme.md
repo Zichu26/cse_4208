@@ -14,3 +14,21 @@ BaseClass::~BaseClass()
 BaseClass::~BaseClass()
 ```
 3. 
+```
+BaseClass::BaseClass()
+BaseClass::BaseClass()
+DerivedClass::DerivedClass()
+Calling print() on base object:
+BaseClass::print()
+Calling print() on derived object:
+DerivedClass::print()
+Calling print() on base ref to base):
+BaseClass::print()
+Calling print() on base ref to derived):
+BaseClass::print()
+Calling print() on derived ref to derived):
+DerivedClass::print()
+DerivedClass::~DerivedClass()
+BaseClass::~BaseClass()
+BaseClass::~BaseClass()
+```
