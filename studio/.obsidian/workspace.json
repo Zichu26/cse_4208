@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "studio_8/readme.md",
+                "file": "studio_9/readme.md",
                 "mode": "source",
                 "source": false
               },
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "studio_8/readme.md",
+                "file": "studio_9/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "studio_8/readme.md",
+                "file": "studio_9/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "studio_8/readme.md",
+                "file": "studio_9/readme.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -171,19 +171,19 @@
   },
   "active": "23b17f8b7e4c9b7e",
   "lastOpenFiles": [
-    "studio_8/DerivedClass.cpp",
-    "studio_8/DerivedClass.h",
-    "studio_8/BaseClass.cpp",
-    "studio_8/BaseClass.h",
-    "studio_7/readme.md",
     "studio_8/readme.md",
-    "studio_8/studio8.cpp",
-    "studio_8/CMakeLists.txt",
-    "studio_8",
-    "studio_7.zip",
-    "studio_6/readme.md",
-    "studio_7/Weekday.h",
-    "studio_7/Weekday.cpp",
-    "studio_7/studio7.cpp"
+    "studio_9/studio9.cpp",
+    "studio_9/studio8.cpp",
+    "studio_9/readme.md",
+    "studio_9/DerivedClass.h",
+    "studio_9/DerivedClass.cpp",
+    "studio_9/CMakeLists.txt",
+    "studio_9/BaseClass.h",
+    "studio_9/BaseClass.cpp",
+    "studio_9",
+    "studio_8.zip",
+    "studio_8/DerivedClass.cpp",
+    "studio_7/readme.md",
+    "studio_6/readme.md"
   ]
 }
