@@ -12,6 +12,7 @@ public:
     MyClass(const std::string& s);
     MyClass(const MyClass& other);
     ~MyClass();
+    MyClass& operator=(const MyClass& other);
 };
 
 #endif
