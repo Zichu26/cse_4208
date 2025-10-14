@@ -4,6 +4,8 @@ set(CMAKE_BUILD_TYPE Debug)
 project(${PROJ})
 add_executable(${PROJ}
     ${PROJ}.cpp
+    BaseClass.cpp 
+    DerivedClass.cpp
 )
 set_target_properties(${PROJ} PROPERTIES
     CXX_STANDARD 17
