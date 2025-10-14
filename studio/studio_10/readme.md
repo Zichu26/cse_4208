@@ -86,4 +86,25 @@ print_info called: object_id = 0, address = 0x9ffec0
 Destructor called: object_id = 0, address = 0xa002f0
 Destructor called: object_id = 0, address = 0x9ffec0
 ```
-6. 
+6. Before the assignment (`ptr1 = ptr2`)
+	- ptr1 owns first object ref count =1
+	- ptr2 owns second object ref count =1
+	- `weak_ptr1` observes the first object but doesn't own it
+	During the assignment (`ptr1 = ptr2`):
+	- `ptr1` stops pointing to the first object ref count=0
+	- The first object is immediately destroyed with the destructor
+	- `ptr1` now points to the second object, its reference count increases to 2
+	After the assignment:
+	- `weak_ptr1` now points to a destroyed object
+	- When we call `weak_ptr1.lock()` the second time, it returns `nullptr` because the object it was observing has been destroyed
+```
+Default constructor called: object_id = 0, address = 0x15f8ec0
+Copy constructor called: object_id = 0, address = 0x15f92f0
+print_info called: object_id = 0, address = 0x15f8ec0
+-------------------
+Destructor called: object_id = 0, address = 0x15f8ec0
+-------------------
+The weak_ptr no longer points to a valid object
+Destructor called: object_id = 0, address = 0x15f92f0
+```
+7. 
