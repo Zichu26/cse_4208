@@ -52,3 +52,17 @@ void (DerivedClass::*ptr_derived_func)() = &DerivedClass::print;
 (derived.*ptr_derived_base_func)();
 (derived.*ptr_derived_func)();
 ```
+5. With virtual functions, the call uses dynamic dispatch - the actual function called is determined at runtime based on the actual type of the object (`derived` is a `DerivedClass`), so it calls the overridden version.
+```
+output:
+BaseClass::BaseClass()
+BaseClass::BaseClass()
+DerivedClass::DerivedClass()
+BaseClass::print()
+BaseClass::print()
+DerivedClass::print()
+DerivedClass::~DerivedClass()
+BaseClass::~BaseClass()
+BaseClass::~BaseClass()
+```
+6. 

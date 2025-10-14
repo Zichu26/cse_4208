@@ -3,6 +3,7 @@
 #include <iostream>
 #include <memory>
 #include <string>
+#include <functional>
 
 using std::shared_ptr;
 using std::make_shared;
@@ -11,13 +12,13 @@ int main() {
     BaseClass base;
     DerivedClass derived;
     
-    void (BaseClass::*ptr_base_func)() = &BaseClass::print;
-    void (DerivedClass::*ptr_derived_base_func)() = &BaseClass::print;
-    void (DerivedClass::*ptr_derived_func)() = &DerivedClass::print;
+    std::function<void(BaseClass&)> func_base = &BaseClass::print;
+    std::function<void(DerivedClass&)> func_derived_base = &BaseClass::print;
+    std::function<void(DerivedClass&)> func_derived = &DerivedClass::print;
     
-    (base.*ptr_base_func)();
-    (derived.*ptr_derived_base_func)();
-    (derived.*ptr_derived_func)();
+    func_base(base);
+    func_derived_base(derived);
+    func_derived(derived);
     
     int success = 0;
     return success;
