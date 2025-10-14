@@ -48,7 +48,12 @@ gmake[2]: *** [CMakeFiles/studio7.dir/build.make:76: CMakeFiles/studio7.dir/stud
 gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/studio7.dir/all] Error 2
 gmake: *** [Makefile:91: all] Error 2
 ```
-5. 
+5. I didn't have to add `using namespace enumerations;` to the source files because the definitions in those files are already inside the `enumerations` namespace block. When code is written inside a namespace block, all the names from that namespace are directly accessible.
 ```cpp
 using namespace enumerations;
+```
+6. 
+```cpp
+using enumerations::Weekday; 
+using enumerations::Pressure;
 ```

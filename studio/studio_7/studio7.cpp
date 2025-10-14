@@ -2,7 +2,8 @@
 #include <iostream>
 using std::cout;
 using std::endl;
-using namespace enumerations;
+using enumerations::Weekday;
+using enumerations::Pressure;
 
 int main() {
     Weekday day = Weekday::Sunday;
