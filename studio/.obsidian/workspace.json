@@ -169,18 +169,19 @@
       "bases:Create new base": false
     }
   },
-  "active": "23b17f8b7e4c9b7e",
+  "active": "ea0df0cd6ad4508b",
   "lastOpenFiles": [
+    "studio_7/Weekday.h",
+    "studio_7/Weekday.cpp",
+    "studio_7/studio7.cpp",
+    "studio_7/studio7.coo",
+    "studio_7/CMakeLists.txt",
+    "studio_7",
+    "studio_6/studio_7",
+    "studio_6.zip",
     "studio_6/run.sh",
     "studio_6/MyStruct.cpp",
     "studio_6/MyStruct.h",
-    "studio_6/studio6.cpp",
-    "studio_6/Stuct.h",
-    "studio_6/main.cpp",
-    "studio_6/stuct.h",
-    "studio_6/CMakeLists.txt",
-    "studio_6/readme.md",
-    "studio_6",
-    "studio_5/studio_6"
+    "studio_6/readme.md"
   ]
 }
