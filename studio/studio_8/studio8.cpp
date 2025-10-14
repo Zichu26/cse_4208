@@ -1,5 +1,6 @@
 #include "BaseClass.h"
 #include "DerivedClass.h"
+#include <iostream>
 
 int main() {
     BaseClass base;
