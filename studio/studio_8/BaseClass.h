@@ -1,10 +1,10 @@
-#include "BaseClass.h"
-#include <iostream>
+#ifndef BASECLASS_H
+#define BASECLASS_H
 
-BaseClass::BaseClass() {
-    std::cout << "BaseClass::BaseClass()" << std::endl;
-}
+class BaseClass {
+public:
+    BaseClass();
+    ~BaseClass();
+};
 
-BaseClass::~BaseClass() {
-    std::cout << "BaseClass::~BaseClass()" << std::endl;
-}
+#endif
