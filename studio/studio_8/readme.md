@@ -32,3 +32,22 @@ DerivedClass::~DerivedClass()
 BaseClass::~BaseClass()
 BaseClass::~BaseClass()
 ```
+4. The only difference is base reference to a derived class. With `virtual` the function call is resolved at run-time based on the dynamic type of the actual object being referred to (`DerivedClass`).
+```
+BaseClass::BaseClass()
+BaseClass::BaseClass()
+DerivedClass::DerivedClass()
+Calling print() on base object:
+BaseClass::print()
+Calling print() on derived object:
+DerivedClass::print()
+Calling print() on base ref to base):
+BaseClass::print()
+Calling print() on base ref to derived):
+DerivedClass::print()
+Calling print() on derived ref to derived):
+DerivedClass::print()
+DerivedClass::~DerivedClass()
+BaseClass::~BaseClass()
+BaseClass::~BaseClass()
+```
