@@ -1,7 +1,7 @@
 #ifndef DERIVED_H
 #define DERIVED_H
 
-#include "Base.h"
+#include "BaseClass.h"
 
 class Derived : public Base {
 public:

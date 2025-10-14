@@ -1,3 +1,12 @@
-#include "BaseClass.h"
+#ifndef BASE_H
+#define BASE_H
 
-Base::Base() : class_name("Base") {}
+#include <string>
+
+class Base {
+public:
+    std::string class_name;
+    Base();
+};
+
+#endif
