@@ -1,6 +1,6 @@
 #include "MyStruct.h"
 
-MyStruct::MyStruct(const MyStruct& other) : x_val(other.x_val), y_val(other.y_val) {
+MyStruct::MyStruct(const MyStruct& other) : x(other.x), y(other.y) {
 }
 
 int MyStruct::getX() const {
