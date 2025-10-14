@@ -16,3 +16,7 @@ MyClass::MyClass(const MyClass& other) : object_id(other.object_id) {
 MyClass::~MyClass() {
     std::cout << "Destructor called: object_id = " << object_id << ", address = " << this << std::endl;
 }
+
+void MyClass::print_info() {
+    std::cout << "print_info called: object_id = " << object_id << ", address = " << this << std::endl;
+}

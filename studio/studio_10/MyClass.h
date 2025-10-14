@@ -12,6 +12,7 @@ public:
     MyClass();
     MyClass(const MyClass& other);
     ~MyClass();
+    void print_info();
 };
 
 #endif
