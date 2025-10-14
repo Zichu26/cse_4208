@@ -1,9 +1,12 @@
 #ifndef MYSTRUCT_H
 #define MYSTRUCT_H
 
-struct MyStruct {
+class MyStruct {
     int x;
     int y;
+
+    MyStruct();
+
 };
 
 #endif
