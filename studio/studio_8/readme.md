@@ -51,3 +51,13 @@ DerivedClass::~DerivedClass()
 BaseClass::~BaseClass()
 BaseClass::~BaseClass()
 ```
+5. The calls using pointers behave identically to the calls using references. Both pointers and references enable polymorphic behavior when calling virtual functions.
+```
+Calling print() on base ptr to base:
+BaseClass::print()
+Calling print() on base ptr to derived:
+DerivedClass::print()
+Calling print() on derived ptr to derived:
+DerivedClass::print()
+```
+6. 
