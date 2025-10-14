@@ -1,8 +1,8 @@
 #include "MyClass.h"
 
 int main() {
-    MyClass* ptr = new MyClass[3];
-    delete ptr;
+    std::shared_ptr<MyClass> ptr1 = std::make_shared<MyClass>();
+    std::shared_ptr<MyClass> ptr2 = std::make_shared<MyClass>(*ptr1);
     
     int success = 0;
     return success;

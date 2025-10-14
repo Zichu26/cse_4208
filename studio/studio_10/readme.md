@@ -54,7 +54,7 @@ int main() {
 	return success;
 }
 ```
-3. 
+3. Memory leak for non-array delete as only one destructor is called for the head of the arrray.
 ```
 array delete:
 Default constructor called: object_id = 0, address = 0x21bdeb8
@@ -66,5 +66,11 @@ Destructor called: object_id = 0, address = 0x21bdeb8
 ```
 ```
 non-array delete:
-
+Default constructor called: object_id = 0, address = 0x25c2eb8
+Default constructor called: object_id = 1, address = 0x25c2ec0
+Default constructor called: object_id = 2, address = 0x25c2ec8
+Destructor called: object_id = 0, address = 0x25c2eb8
+munmap_chunk(): invalid pointer
+./run.sh: line 4: 1999817 Aborted                 (core dumped) ./build/studio10
 ```
+4. 
