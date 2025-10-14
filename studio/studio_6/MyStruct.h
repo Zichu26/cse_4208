@@ -2,9 +2,10 @@
 #define MYSTRUCT_H
 
 class MyStruct {
+private:
     int x;
     int y;
-
+public:
     MyStruct();
 
     int getX() const;
