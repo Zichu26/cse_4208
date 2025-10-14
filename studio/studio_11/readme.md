@@ -40,3 +40,9 @@ print(): object at 0x25c5eb0 with str = "hello"
 Destructor: destroying object at 0x25c5eb0 with str = "hello"
 ```
 8. 
+```
+Constructor: constructing object at 0x1567eb0 with str = "hello"
+print(): object at 0x1567eb0 with str = "hello"
+print(): object at 0x1567eb0 with str = "hello"
+Destructor: destroying object at 0x1567eb0 with str = "hello"
+```
