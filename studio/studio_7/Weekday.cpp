@@ -1,6 +1,7 @@
 #include "Weekday.h"
+using namespace std;
 
-std::ostream& operator<<(std::ostream& os, const Weekday& day) {
+ostream& operator<<(ostream& os, const Weekday& day) {
     switch (day) {
         case Weekday::Sunday:
             os << "Sun";
@@ -83,7 +84,7 @@ Weekday operator--(Weekday& day, int) {
     return day;
 }
 
-std::ostream& operator<<(std::ostream& os, const Pressure& pressure) {
+ostream& operator<<(ostream& os, const Pressure& pressure) {
     switch (pressure) {
         case Pressure::lo:
             os << "Low";
