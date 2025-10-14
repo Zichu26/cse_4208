@@ -1,24 +1,17 @@
-#include "BaseClass.h"
-#include "DerivedClass.h"
+#include "Base.h"
+#include "Derived.h"
 #include <iostream>
-#include <memory>
 #include <string>
-#include <functional>
-
-using std::shared_ptr;
-using std::make_shared;
 
 int main() {
-    BaseClass base;
-    DerivedClass derived;
+    Base base_obj;
+    Derived derived_obj;
     
-    auto func_base = std::mem_fn(&BaseClass::print);
-    auto func_derived_base = std::mem_fn(&BaseClass::print);
-    auto func_derived = std::mem_fn(&DerivedClass::print);
+    const std::string Derived::* ptr_to_derived_inherited = &Derived::class_name;
+    const std::string Base::* ptr_to_base_member = &Base::class_name;
     
-    func_base(base);
-    func_derived_base(derived);
-    func_derived(derived);
+    std::cout << derived_obj.*ptr_to_derived_inherited << std::endl;
+    std::cout << base_obj.*ptr_to_base_member << std::endl;
     
     int success = 0;
     return success;

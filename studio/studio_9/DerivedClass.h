@@ -1,17 +1,11 @@
-#ifndef DERIVEDCLASS_H
-#define DERIVEDCLASS_H
+#ifndef DERIVED_H
+#define DERIVED_H
 
-#include "BaseClass.h"
-#include <string>
+#include "Base.h"
 
-class DerivedClass : public BaseClass {
-private:
-    std::string derived_name;
+class Derived : public Base {
 public:
-    DerivedClass();
-    virtual ~DerivedClass();
-    void print();
-    static const std::string DerivedClass::* get_derived_name_ptr();
+    Derived();
 };
 
 #endif

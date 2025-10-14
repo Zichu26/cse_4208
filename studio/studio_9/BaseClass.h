@@ -1,16 +1,3 @@
-#ifndef BASECLASS_H
-#define BASECLASS_H
+#include "BaseClass.h"
 
-#include <string>
-
-class BaseClass {
-private:
-    std::string base_name;
-public:
-    BaseClass();
-    virtual ~BaseClass();
-    void print();
-    static const std::string BaseClass::* get_base_name_ptr();
-};
-
-#endif
+Base::Base() : class_name("Base") {}
