@@ -27,12 +27,10 @@ int main() {
     // MyStruct n(m); // copy construction
     // cout << "n.x = " << n.getX() << " and n.y = " << n.getY() << endl;
 
-    cout << "=== Creating m with default constructor ===" << endl;
-    MyStruct m; // default construction
+    MyStruct m;
     cout << "m.x is " << m.x() << " and m.y is " << m.y() << endl;
     cout << endl;
     
-    cout << "=== Calling passByValue(m) before mutation ===" << endl;
     MyStruct result1 = passByValue(m);
     cout << "Returned object address: " << &result1 << endl;
     cout << endl;
