@@ -1,5 +1,6 @@
 #include "MyClass.h"
 #include <memory>
+#include <iostream>
 
 int main() {
     std::shared_ptr<MyClass> ptr1 = std::make_shared<MyClass>();
