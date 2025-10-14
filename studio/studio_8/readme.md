@@ -61,3 +61,12 @@ Calling print() on derived ptr to derived:
 DerivedClass::print()
 ```
 6. 
+```
+Calling print() on base prt to base:
+BaseClass::print()
+Calling print() on base prt to derived:
+DerivedClass::print()
+Calling print() on derived ptr to derived):
+DerivedClass::print()
+```
+
