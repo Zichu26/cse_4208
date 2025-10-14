@@ -16,9 +16,9 @@ int main() {
         locked_ptr = nullptr;
     }
 
-    std::cout << "About to assign ptr2 to ptr1" << std::endl;
+    std::cout << "-------------------" << std::endl;
     ptr1 = ptr2;
-    std::cout << "Assignment completed" << std::endl;
+    std::cout << "-------------------" << std::endl;
     locked_ptr = weak_ptr1.lock();
 
     if (locked_ptr == nullptr) {
