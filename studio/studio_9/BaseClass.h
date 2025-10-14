@@ -3,10 +3,12 @@
 #include <string>
 
 class BaseClass {
-public:
+private:
     std::string name;
+public:
     BaseClass();
     virtual ~BaseClass();
     virtual void print();
+    static std::string BaseClass::* getNamePointer();
 };
 #endif

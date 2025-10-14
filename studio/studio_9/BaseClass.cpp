@@ -12,3 +12,7 @@ BaseClass::~BaseClass() {
 void BaseClass::print() {
     std::cout << "BaseClass::print()" << std::endl;
 }
+
+std::string BaseClass::* BaseClass::getNamePointer() {
+    return &BaseClass::name;
+}
