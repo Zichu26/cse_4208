@@ -42,32 +42,32 @@ int main() {
     // std::cout << "Calling print() on derived ptr to derived:" << std::endl;
     // derived_ptr->print();
 
-    // shared_ptr<BaseClass> base_ptr1 = make_shared<BaseClass>();
-    // shared_ptr<BaseClass> base_ptr2 = make_shared<DerivedClass>();
-    // shared_ptr<DerivedClass> derived_ptr = make_shared<DerivedClass>();
+    shared_ptr<BaseClass> base_ptr1 = make_shared<BaseClass>();
+    shared_ptr<BaseClass> base_ptr2 = make_shared<DerivedClass>();
+    shared_ptr<DerivedClass> derived_ptr = make_shared<DerivedClass>();
     
-    // std::cout << "Calling print() on base prt to base:" << std::endl;
-    // base_ptr1->print();
+    std::cout << "Calling print() on base prt to base:" << std::endl;
+    base_ptr1->print();
     
-    // std::cout << "Calling print() on base prt to derived:" << std::endl;
-    // base_ptr2->print();
+    std::cout << "Calling print() on base prt to derived:" << std::endl;
+    base_ptr2->print();
     
-    // std::cout << "Calling print() on derived ptr to derived):" << std::endl;
-    // derived_ptr->print();
+    std::cout << "Calling print() on derived ptr to derived):" << std::endl;
+    derived_ptr->print();
 
-    BaseClass* base_ptr3 = new BaseClass();
-    BaseClass* base_ptr4 = new DerivedClass();
-    DerivedClass* derived_ptr5 = new DerivedClass();
+    // BaseClass* base_ptr3 = new BaseClass();
+    // BaseClass* base_ptr4 = new DerivedClass();
+    // DerivedClass* derived_ptr5 = new DerivedClass();
     
-    std::cout << "Calling print() on base ptr to base" << std::endl;
-    base_ptr3->print();
+    // std::cout << "Calling print() on base ptr to base" << std::endl;
+    // base_ptr3->print();
     
-    std::cout << "Calling print() on base ptr to derived:" << std::endl;
-    base_ptr4->print();
+    // std::cout << "Calling print() on base ptr to derived:" << std::endl;
+    // base_ptr4->print();
     
-    std::cout << "Calling print() on derived ptr to derived:" << std::endl;
-    derived_ptr5->print();
+    // std::cout << "Calling print() on derived ptr to derived:" << std::endl;
+    // derived_ptr5->print();
 
-    int success = 0;
-    return success;
+    // int success = 0;
+    // return success;
 }

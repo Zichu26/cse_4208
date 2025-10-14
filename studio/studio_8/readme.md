@@ -69,8 +69,13 @@ DerivedClass::print()
 Calling print() on derived ptr to derived):
 DerivedClass::print()
 ```
-7. 
-```
+7. The destructors are never called.
+``` 
+BaseClass::BaseClass()
+BaseClass::BaseClass()
+DerivedClass::DerivedClass()
+BaseClass::BaseClass()
+DerivedClass::DerivedClass()
 Calling print() on base ptr to base
 BaseClass::print()
 Calling print() on base ptr to derived:
