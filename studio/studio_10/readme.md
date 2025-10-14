@@ -74,3 +74,8 @@ munmap_chunk(): invalid pointer
 ./run.sh: line 4: 1999817 Aborted                 (core dumped) ./build/studio10
 ```
 4. 
+```cpp
+std::shared_ptr<MyClass> ptr1 = std::make_shared<MyClass>();
+std::shared_ptr<MyClass> ptr2 = std::make_shared<MyClass>(*ptr1);
+```
+5. 
