@@ -24,3 +24,8 @@ MyClass& MyClass::operator=(const MyClass& other) {
     str = other.str;
     return *this;
 }
+
+void MyClass::print() {
+    std::cout << "print(): object at " << this 
+              << " with str = \"" << str << "\"" << std::endl;
+}

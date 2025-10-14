@@ -11,8 +11,9 @@ public:
     MyClass() = default;
     MyClass(const std::string& s);
     MyClass(const MyClass& other);
-    ~MyClass();
+    virtual ~MyClass();
     MyClass& operator=(const MyClass& other);
+    virtual void print();
 };
 
 #endif
