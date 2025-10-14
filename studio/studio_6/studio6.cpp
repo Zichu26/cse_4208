@@ -28,13 +28,9 @@ int main() {
     // cout << "n.x = " << n.getX() << " and n.y = " << n.getY() << endl;
 
     MyStruct m;
-    
     MyStruct result1 = passByValue(m);
-    
-    // cout << "=== Mutating m ===" << endl;
-    // m.x(7).y(3); // chained use of mutator functions
-    // cout << "m.x is " << m.x() << " and m.y is " << m.y() << endl;
-    // cout << endl;
+    m.x(7).y(3);
+    MyStruct result1 = passByValue(m);
     
     // cout << "=== Calling passByValue(m) after mutation ===" << endl;
     // MyStruct result2 = passByValue(m);
