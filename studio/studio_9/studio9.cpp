@@ -7,7 +7,7 @@ int main() {
     DerivedClass derived_obj;
     
     std::string DerivedClass::*ptr1 = DerivedClass::getNamePointer();
-    std::string BaseClass::*ptr2 = DerivedClass::getNamePointer();
+    std::string BaseClass::*ptr2 = BaseClass::getNamePointer();
     std::string BaseClass::*ptr3 = BaseClass::getNamePointer();
     
     std::cout << derived_obj.*ptr1 << std::endl;
