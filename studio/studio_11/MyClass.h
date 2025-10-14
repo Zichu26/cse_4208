@@ -9,7 +9,9 @@ private:
 
 public:
     MyClass() = default;
+    MyClass(const std::string& s);
     MyClass(const MyClass& other);
+    ~MyClass();
 };
 
 #endif
