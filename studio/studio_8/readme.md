@@ -62,12 +62,22 @@ DerivedClass::print()
 ```
 6. 
 ```
+BaseClass::BaseClass()
+BaseClass::BaseClass()
+DerivedClass::DerivedClass()
+BaseClass::BaseClass()
+DerivedClass::DerivedClass()
 Calling print() on base prt to base:
 BaseClass::print()
 Calling print() on base prt to derived:
 DerivedClass::print()
 Calling print() on derived ptr to derived):
 DerivedClass::print()
+DerivedClass::~DerivedClass()
+BaseClass::~BaseClass()
+DerivedClass::~DerivedClass()
+BaseClass::~BaseClass()
+BaseClass::~BaseClass()
 ```
 7. The destructors are never called.
 ``` 
