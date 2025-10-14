@@ -15,7 +15,7 @@ int main() {
     const MyStruct s2;
     std::cout << "x: " << s2.getX() << std::endl;
     std::cout << "y: " << s2.getY() << std::endl;
-    // s2.setX(33);  
-    // s2.setY(44);  
+    s2.setX(33);  
+    s2.setY(44);  
     
 }
