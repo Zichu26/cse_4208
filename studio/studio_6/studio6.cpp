@@ -22,7 +22,7 @@ int main() {
 
     MyStruct m; // default construction
     cout << "m.x is " << m.getX() << " and m.y is " << m.getY() << endl;
-    m.x(7).y(3); // chained use of mutator functions
+    m.setX(7).setY(3); // chained use of mutator functions
     cout << "m.x is " << m.getX() << " and m.y is " << m.getY() << endl;
     MyStruct n(m); // copy construction
     cout << "n.x = " << n.getX() << " and n.y = " << n.getY() << endl;
