@@ -11,13 +11,18 @@ int main() {
     BaseClass base;
     DerivedClass derived;
     
-    const std::string DerivedClass::* ptr_derived = DerivedClass::get_derived_name_ptr();
-    const std::string DerivedClass::* ptr_base_from_derived = BaseClass::get_base_name_ptr();
-    const std::string BaseClass::* ptr_base = BaseClass::get_base_name_ptr();
+    void (BaseClass::*ptr_base_func)() = &BaseClass::print;
+    void (DerivedClass::*ptr_derived_base_func)() = &BaseClass::print;
+    void (DerivedClass::*ptr_derived_func)() = &DerivedClass::print;
     
-    std::cout << derived.*ptr_derived << std::endl;
-    std::cout << derived.*ptr_base_from_derived << std::endl;
-    std::cout << base.*ptr_base << std::endl;
+    std::cout << "Calling through ptr_base_func on base object:" << std::endl;
+    (base.*ptr_base_func)();
+    
+    std::cout << "Calling through ptr_derived_base_func on derived object:" << std::endl;
+    (derived.*ptr_derived_base_func)();
+    
+    std::cout << "Calling through ptr_derived_func on derived object:" << std::endl;
+    (derived.*ptr_derived_func)();
     
     int success = 0;
     return success;
