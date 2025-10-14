@@ -16,3 +16,81 @@ y: 0
 ```
 	`struct` members are `public` by default. `class` members are `private` by default. The `public` specfication needs to be used for `class` to make member variables visisable from outside class.
 4. 
+```
+output:
+x: 0
+y: 0
+non const after mutation:
+x: 33
+y: 44
+
+x: 0
+y: 0
+```
+```cpp
+// main.cpp
+#include <iostream>
+#include "MyStruct.h
+
+int main() {
+	MyStruct s1;
+	std::cout << "x: " << s1.getX() << std::endl;
+	std::cout << "y: " << s1.getY() << std::endl;
+	s1.setX(33);
+	s1.setY(44);
+	std::cout << "non const after mutation:" << std::endl;
+	std::cout << "x: " << s1.getX() << std::endl;
+	std::cout << "y: " << s1.getY() << std::endl;
+	std::cout << std::endl;
+	
+	const MyStruct s2;
+	std::cout << "x: " << s2.getX() << std::endl;
+	std::cout << "y: " << s2.getY() << std::endl;
+	// s2.setX(33);
+	// s2.setY(44);
+}
+```
+```cpp
+// MyStruct.h
+#ifndef MYSTRUCT_H
+#define MYSTRUCT_H
+
+class MyStruct {
+private:
+	int x;
+	int y;
+	
+public:
+	MyStruct();
+	int getX() const;
+	int getY() const;
+	MyStruct& setX(int value);
+	MyStruct& setY(int value);
+};
+#endif
+```
+```cpp
+// MyStruct.cpp
+#include "MyStruct.h"
+MyStruct::MyStruct() : x(0), y(0) {
+}
+
+int MyStruct::getX() const {
+	return x;
+}
+
+int MyStruct::getY() const {
+	return y;
+}
+
+MyStruct& MyStruct::setX(int value) {
+	x = value;
+	return *this;
+}
+
+MyStruct& MyStruct::setY(int value) {
+	y = value;
+	return *this;
+}
+```
+5. 
