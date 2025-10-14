@@ -12,7 +12,7 @@ int main() {
     DerivedClass derived;
     
     const std::string DerivedClass::* ptr_derived = &DerivedClass::derived_name;
-    const std::string DerivedClass::* ptr_base_from_derived = &DerivedClass::base_name;
+    const std::string DerivedClass::* ptr_base_from_derived = &BaseClass::base_name;
     const std::string BaseClass::* ptr_base = &BaseClass::base_name;
     
     std::cout << derived.*ptr_derived << std::endl;
