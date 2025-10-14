@@ -22,7 +22,7 @@ int main() {
     cout << "m.x is " << m.x() << " and m.y is " << m.y() << endl;
     m.x(7).y(3); // chained use of mutator functions
     cout << "m.x is " << m.x() << " and m.y is " << m.y() << endl;
-    MyStuct n(m); // copy construction
+    MyStruct n(m); // copy construction
     cout << "n.x = " << n.x() << " and n.y = " << n.y() << endl;
     
 }
