@@ -1,4 +1,5 @@
 #include "MyClass.h"
+#include <memory>
 
 int main() {
     std::unique_ptr<MyClass> ptr1(new MyClass("hello"));
