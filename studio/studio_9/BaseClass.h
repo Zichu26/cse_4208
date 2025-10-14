@@ -9,7 +9,7 @@ private:
 public:
     BaseClass();
     virtual ~BaseClass();
-    virtual void print();
+    void print();
     static const std::string BaseClass::* get_base_name_ptr();
 };
 

@@ -32,3 +32,23 @@ const std::string DerivedClass::* ptr_base_from_derived = BaseClass::get_base_na
 const std::string BaseClass::* ptr_base = BaseClass::get_base_name_ptr();
 ```
 4. 
+```output
+BaseClass::BaseClass()
+BaseClass::BaseClass()
+DerivedClass::DerivedClass()
+BaseClass::print()
+DerivedClass::print()
+DerivedClass::print()
+DerivedClass::~DerivedClass()
+BaseClass::~BaseClass()
+BaseClass::~BaseClass()
+```
+```cpp
+void (BaseClass::*ptr_base_func)() = &BaseClass::print;
+void (DerivedClass::*ptr_derived_base_func)() = &BaseClass::print;
+void (DerivedClass::*ptr_derived_func)() = &DerivedClass::print;
+
+(base.*ptr_base_func)();
+(derived.*ptr_derived_base_func)();
+(derived.*ptr_derived_func)();
+```

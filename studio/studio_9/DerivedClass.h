@@ -10,7 +10,7 @@ private:
 public:
     DerivedClass();
     virtual ~DerivedClass();
-    virtual void print();
+    void print();
     static const std::string DerivedClass::* get_derived_name_ptr();
 };
 
