@@ -15,13 +15,8 @@ int main() {
     void (DerivedClass::*ptr_derived_base_func)() = &BaseClass::print;
     void (DerivedClass::*ptr_derived_func)() = &DerivedClass::print;
     
-    std::cout << "Calling through ptr_base_func on base object:" << std::endl;
     (base.*ptr_base_func)();
-    
-    std::cout << "Calling through ptr_derived_base_func on derived object:" << std::endl;
     (derived.*ptr_derived_base_func)();
-    
-    std::cout << "Calling through ptr_derived_func on derived object:" << std::endl;
     (derived.*ptr_derived_func)();
     
     int success = 0;
