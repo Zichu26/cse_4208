@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Struct.h"
+#include "MyStruct.h"
 
 int main() {
     MyStruct s;
