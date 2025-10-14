@@ -1,6 +1,8 @@
 #ifndef MYSTRUCT_H
 #define MYSTRUCT_H
 
+#include <iostream>
+
 class MyStruct {
 private:
     int x;
