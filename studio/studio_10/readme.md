@@ -79,3 +79,11 @@ std::shared_ptr<MyClass> ptr1 = std::make_shared<MyClass>();
 std::shared_ptr<MyClass> ptr2 = std::make_shared<MyClass>(*ptr1);
 ```
 5. 
+```
+Default constructor called: object_id = 0, address = 0x9ffec0
+Copy constructor called: object_id = 0, address = 0xa002f0
+print_info called: object_id = 0, address = 0x9ffec0
+Destructor called: object_id = 0, address = 0xa002f0
+Destructor called: object_id = 0, address = 0x9ffec0
+```
+6. 

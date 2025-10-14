@@ -15,6 +15,15 @@ int main() {
         locked_ptr->print_info();
         locked_ptr = nullptr;
     }
+
+    ptr1 = ptr2;
+    locked_ptr = weak_ptr1.lock();
+
+    if (locked_ptr == nullptr) {
+        std::cout << "The weak_ptr no longer points to a valid object" << std::endl;
+    } else {
+        locked_ptr->print_info();
+    }
     
     int success = 0;
     return success;
