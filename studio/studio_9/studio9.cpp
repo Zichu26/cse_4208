@@ -12,9 +12,9 @@ int main() {
     BaseClass base;
     DerivedClass derived;
     
-    std::function<void(BaseClass&)> func_base = &BaseClass::print;
-    std::function<void(DerivedClass&)> func_derived_base = &BaseClass::print;
-    std::function<void(DerivedClass&)> func_derived = &DerivedClass::print;
+    auto func_base = std::mem_fn(&BaseClass::print);
+    auto func_derived_base = std::mem_fn(&BaseClass::print);
+    auto func_derived = std::mem_fn(&DerivedClass::print);
     
     func_base(base);
     func_derived_base(derived);

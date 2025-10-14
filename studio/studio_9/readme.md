@@ -66,3 +66,9 @@ BaseClass::~BaseClass()
 BaseClass::~BaseClass()
 ```
 6. 
+```cpp
+std::function<void(BaseClass&)> func_base = &BaseClass::print;
+std::function<void(DerivedClass&)> func_derived_base = &BaseClass::print;
+std::function<void(DerivedClass&)> func_derived = &DerivedClass::print;
+```
+7. 
