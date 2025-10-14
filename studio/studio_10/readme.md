@@ -108,3 +108,9 @@ The weak_ptr no longer points to a valid object
 Destructor called: object_id = 0, address = 0x15f92f0
 ```
 7. 
+```
+Default constructor called: object_id = 0, address = 0x22a4eb0
+print_info called: object_id = 0, address = 0x22a4eb0
+print_info called: object_id = 0, address = 0x22a4eb0
+Destructor called: object_id = 0, address = 0x22a4eb0
+```
