@@ -1,5 +1,5 @@
 #include "Weekday.h"
-using namespace std;
+using std::ostream;
 
 ostream& operator<<(ostream& os, const Weekday& day) {
     switch (day) {

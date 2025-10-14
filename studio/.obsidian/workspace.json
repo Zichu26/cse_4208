@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "studio_6/readme.md",
+                "file": "studio_7/readme.md",
                 "mode": "source",
                 "source": false
               },
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "studio_6/readme.md",
+                "file": "studio_7/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "studio_6/readme.md",
+                "file": "studio_7/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "studio_6/readme.md",
+                "file": "studio_7/readme.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -169,8 +169,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "ea0df0cd6ad4508b",
+  "active": "23b17f8b7e4c9b7e",
   "lastOpenFiles": [
+    "studio_6/readme.md",
+    "studio_7/readme.md",
     "studio_7/Weekday.h",
     "studio_7/Weekday.cpp",
     "studio_7/studio7.cpp",
@@ -180,8 +182,6 @@
     "studio_6/studio_7",
     "studio_6.zip",
     "studio_6/run.sh",
-    "studio_6/MyStruct.cpp",
-    "studio_6/MyStruct.h",
-    "studio_6/readme.md"
+    "studio_6/MyStruct.cpp"
   ]
 }

@@ -1,6 +1,7 @@
 #include "Weekday.h"
 #include <iostream>
-using namespace std;
+using std::cout;
+using std::endl;
 
 int main() {
     Weekday day = Weekday::Sunday;
