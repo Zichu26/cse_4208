@@ -1,5 +1,5 @@
 #include "BaseClass.h"
-#include "DerivedClassc.h"
+#include "DerivedClass.h"
 #include <iostream>
 #include <string>
 
