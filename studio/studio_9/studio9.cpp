@@ -11,9 +11,9 @@ int main() {
     BaseClass base;
     DerivedClass derived;
     
-    const std::string DerivedClass::* ptr_derived = &DerivedClass::derived_name;
-    const std::string DerivedClass::* ptr_base_from_derived = &DerivedClass::base_name;
-    const std::string BaseClass::* ptr_base = &BaseClass::base_name;
+    const std::string DerivedClass::* ptr_derived = DerivedClass::get_derived_name_ptr();
+    const std::string DerivedClass::* ptr_base_from_derived = BaseClass::get_base_name_ptr();
+    const std::string BaseClass::* ptr_base = BaseClass::get_base_name_ptr();
     
     std::cout << derived.*ptr_derived << std::endl;
     std::cout << derived.*ptr_base_from_derived << std::endl;

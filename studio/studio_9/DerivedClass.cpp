@@ -12,3 +12,8 @@ DerivedClass::~DerivedClass() {
 void DerivedClass::print() {
     std::cout << "DerivedClass::print()" << std::endl;
 }
+
+
+const std::string DerivedClass::* DerivedClass::get_derived_name_ptr() {
+    return &DerivedClass::derived_name;
+}

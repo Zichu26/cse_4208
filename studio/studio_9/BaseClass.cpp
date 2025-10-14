@@ -12,3 +12,7 @@ BaseClass::~BaseClass() {
 void BaseClass::print() {
     std::cout << "BaseClass::print()" << std::endl;
 }
+
+const std::string BaseClass::* BaseClass::get_base_name_ptr() {
+    return &BaseClass::base_name;
+}

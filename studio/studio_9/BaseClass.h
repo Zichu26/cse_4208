@@ -4,11 +4,13 @@
 #include <string>
 
 class BaseClass {
-public:
+private:
     std::string base_name;
+public:
     BaseClass();
     virtual ~BaseClass();
     virtual void print();
+    static const std::string BaseClass::* get_base_name_ptr();
 };
 
 #endif
