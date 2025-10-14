@@ -8,3 +8,7 @@ DerivedClass::DerivedClass() {
 DerivedClass::~DerivedClass() {
     std::cout << "DerivedClass::~DerivedClass()" << std::endl;
 }
+
+void DerivedClass::print() {
+    std::cout << "DerivedClass::print()" << std::endl;
+}

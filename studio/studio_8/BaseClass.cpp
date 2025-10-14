@@ -8,3 +8,7 @@ BaseClass::BaseClass() {
 BaseClass::~BaseClass() {
     std::cout << "BaseClass::~BaseClass()" << std::endl;
 }
+
+void BaseClass::print() {
+    std::cout << "BaseClass::print()" << std::endl;
+}
