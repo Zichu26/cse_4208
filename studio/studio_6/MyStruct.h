@@ -7,7 +7,7 @@ private:
     int y;
 
 public:
-    MyStruct() = default;
+    MyStruct();
     MyStruct(const MyStruct& other);
     int getX() const;
     int getY() const;
@@ -15,5 +15,7 @@ public:
     MyStruct& setY(int value);
 
 };
+
+MyStruct passByValue(MyStruct obj);
 
 #endif

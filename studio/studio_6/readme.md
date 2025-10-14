@@ -95,3 +95,10 @@ MyStruct& MyStruct::setY(int value) {
 ```
 5. We have explicitly provided a default constructor that sets `m.x` and `m.y` to (0,0). The compiler supplies a copy constructor that performs memberwise copy.
 6. 
+```output
+m.x is 4196240 and m.y is 0
+m.x is 7 and m.y is 3
+n.x = 7 and n.y = 3
+```
+	The copy constructor behaved the same, but the compiler supplied default constructor does initialied the member variables so it contains the garbage data from stack.
+7. 
