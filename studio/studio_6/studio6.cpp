@@ -27,10 +27,11 @@ int main() {
     // MyStruct n(m); // copy construction
     // cout << "n.x = " << n.getX() << " and n.y = " << n.getY() << endl;
 
-    MyStruct m;
-    MyStruct result1 = passByValue(m);
+
+    MyStruct m; // default constructor called
+    MyStruct result1 = passByValue(m);  // copy constructor called twice, once for creating parameter m, once for creating result
     m.setX(7).setY(3);
-    MyStruct result2 = passByValue(m);
-    MyStruct n(m);
-     MyStruct result3 = passByValue(n);
+    MyStruct result2 = passByValue(m); // copy constructor called twice, once for creating parameter m, once for creating result
+    MyStruct n(m); // copy constructor called once
+    MyStruct result3 = passByValue(n); // copy constructor called twice, once for creating parameter n, once for creating result
 }

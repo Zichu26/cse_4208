@@ -1,10 +1,10 @@
 #include "MyStruct.h"
 
-MyStruct::MyStruct() : x(0), y(0) {
-    std::cout << "Default constructor: MyStruct()" << std::endl;
-    std::cout << "  Address: " << this << std::endl;
-    std::cout << "  Values: x_val=" << x << ", y_val=" << y << std::endl;
-}
+// MyStruct::MyStruct() : x(0), y(0) {
+//     std::cout << "Default constructor: MyStruct()" << std::endl;
+//     std::cout << "  Address: " << this << std::endl;
+//     std::cout << "  Values: x_val=" << x << ", y_val=" << y << std::endl;
+// }
 
 MyStruct::MyStruct(const MyStruct& other) : x(other.x), y(other.y) {
     std::cout << "Copy constructor: MyStruct(const MyStruct& other)" << std::endl;

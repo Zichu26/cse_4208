@@ -7,9 +7,10 @@ class MyStruct {
 private:
     int x;
     int y;
+    MyStruct();
 
 public:
-    MyStruct();
+    // MyStruct();
     MyStruct(const MyStruct& other);
     int getX() const;
     int getY() const;
